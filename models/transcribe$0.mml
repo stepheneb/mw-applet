@@ -328,7 +328,7 @@
    </void> 
    <void method="put"> 
     <string>url</string> 
-    <string>C:\home\mw\public\test\transcribe$0.mml</string> 
+    <string>transcribe$0.mml</string> 
    </void> 
    <void method="put"> 
     <string>size</string> 
