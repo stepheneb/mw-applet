@@ -35,12 +35,28 @@ function report (applet_id) {
   };
 }
 
-function getApplet(applet_id) {
-  return document.getElementById(applet_id);
-}
 
 function javaClassName(java_obj) {
   return String(java_obj.getClass().getName());
+}
+
+function runOTrunkAppletMWScript(applet_id, script) {
+  var mw_page = getMWPage(applet_id);
+  return mw_page.executeMwScripts(script);
+}
+
+function getMWPage(applet_id) {
+  var view = getOTViewforApplet(applet_id);
+  return view.getPage();
+}
+
+function getOTViewforApplet(applet_id) {
+  var applet = getApplet(applet_id);
+  return applet.getOTContainer().getView();
+}
+
+function getApplet(applet_id) {
+  return document.getElementById(applet_id);
 }
 
 function componentForAppletObject(applet_id, ot_local_id) {
@@ -53,14 +69,7 @@ function getAppletLocalOTObject(applet, ot_local_id) {
   return applet.getOTrunk().getOTObject(applet.getID(ot_local_id));
 }
 
-
 function reloadOTApplet(applet_id) {
   var applet = getApplet(applet_id);
   applet.getOTContainer().reloadView();
-}
-
-function runOTMWAppletScript(applet_id, script) {
-  var mw_object = componentForObject(applet_id,applet_id).getComponent(0).getComponent(0);
-  
-  return mw_object.runMwScript(script);
 }
