@@ -6,10 +6,28 @@
   <link rel="stylesheet" href="stylesheet/test.css" type="text/css" />
   <script type="text/javascript" src="javascript/library.js"></script>
   <script type="text/javascript" src="javascript/jquery-1.4.js"></script>
+  <script type="text/javascript"> 
+    function sendCode(applet_id) {
+      var msg = runOTrunkAppletMWScript(applet_id, "mw2d:1:get DNA");
+      document.getElementById("code").innerHTML="DNA code: " + msg;
+    }
+    function receiveCode(applet_id) {
+      var x=prompt("Please enter DNA code:","")
+      runOTrunkAppletMWScript(applet_id, "mw2d:1:set DNA " + x);
+    }
+    function stopRKey(evt) { 
+      var evt = (evt) ? evt : ((event) ? event : null); 
+      var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null); 
+      if ((evt.keyCode == 13) && (node.type=="text"))  {return false;} 
+    } 
+    document.onkeypress = stopRKey; 
+  </script>
+  
 </head>
 <body>
   <div id="main" class="page-content">
     <h3 class="page-title namespace">MW Applet/Javascript reporting test</h3>
+    <div id="back" class="back"><a href="index.html">back</a></div>
     <div class="report">
       <p>This page embeds an instrumented applet version of Molecular Workbench which supports
         logging of user interactions with model and scripted controls. </p>
@@ -17,7 +35,7 @@
         consists only of user ActionItems.</p>
     </div>
     <div class="section">
-      <div style="width:780px; height:240px margin:20px">
+      <div style="width:780px; height:300px; margin:20px; padding:10px">
         <applet id="myapplet"
           archive="
           lib/mw-aspects.jar,
@@ -35,6 +53,15 @@
           width="100%" height="240">
           <param name="url" value="models/transcribe-cml.otml"/>
         </applet>
+        <form style="margin-left:40px; padding:10px;">
+          <input type="button" value="Input DNA code" onclick="receiveCode('myapplet')">
+          <input type="button" value="Start"          onclick="runOTrunkAppletMWScript('myapplet', 'mw2d:1:transcribe A;')">
+          <input type="button" value="A"              onclick="runOTrunkAppletMWScript('myapplet', 'mw2d:1:transcribe A;')">
+          <input type="button" value="C"              onclick="runOTrunkAppletMWScript('myapplet', 'mw2d:1:transcribe C;')">
+          <input type="button" value="G"              onclick="runOTrunkAppletMWScript('myapplet', 'mw2d:1:transcribe G;')">
+          <input type="button" value="U"              onclick="runOTrunkAppletMWScript('myapplet', 'mw2d:1:transcribe U;')">
+          <input type="button" value="Print DNA code" onclick="sendCode('myapplet')">
+        </form>
       </div>
     </div>
     <div class="clearfix"/></div>
