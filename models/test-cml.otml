@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<otrunk id="33754150-b594-11d9-9669-0800200c9a66">
+  <imports>
+    <import class="org.concord.otrunk.OTSystem"/>
+    <import class="org.concord.otrunk.view.OTViewEntry"/>
+    <import class="org.concord.otrunk.view.OTViewService"/>
+    <import class="org.concord.otrunk.view.document.OTCompoundDoc"/>
+    <import class="org.concord.otrunk.view.document.OTTextObject"/>
+    <import class="org.concord.otrunkmw.OTModelerModel"/>
+    <import class="org.concord.otrunkmw.OTModelerPage"/>
+  </imports>
+  <objects>
+    <OTSystem>
+      <services>
+        <OTViewService showLeftPanel="false">
+          <viewEntries>
+            <OTViewEntry objectClass="org.concord.otrunkmw.OTModelerModel" viewClass="org.concord.otrunkmw.OTModelerModelView"/>
+            <OTViewEntry objectClass="org.concord.otrunkmw.OTModelerPage" viewClass="org.concord.otrunkmw.OTModelerPageView"/>
+          </viewEntries>
+        </OTViewService>
+      </services>
+      <root>
+        <OTModelerPage local_id="test_cml" authoredDataURL="test.cml"/>
+      </root>
+    </OTSystem>
+  </objects>
+</otrunk>

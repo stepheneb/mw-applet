@@ -1,0 +1,121 @@
+<OTModelerPage>
+  <events>
+    <OTActionItem>
+      <properties>
+        <entry key="script">
+          <string>set action ADDA_ID;
+set %buttonSelected %dropH;
+cursor hcursor.gif (8,8);</string>
+        </entry>
+        <entry key="name">
+          <string>Execute MW Script</string>
+        </entry>
+        <entry key="event">
+          <string>java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=,when=1271774092949,modifiers=Button1] on Execute MW script</string>
+        </entry>
+        <entry key="description">
+          <string>Execute MW script</string>
+        </entry>
+        <entry key="source">
+          <string>&lt;class&gt;org.concord.modeler.PageRadioButton&lt;/class&gt;
+&lt;title&gt;&lt;/title&gt;
+&lt;imagefile&gt;dropHydrogenDOWN.png&lt;/imagefile&gt;
+&lt;imagefiledeselected&gt;dropHydrogenUP.png&lt;/imagefiledeselected&gt;
+&lt;tooltip&gt;add a hydrogen atom&lt;/tooltip&gt;
+&lt;selected&gt;true&lt;/selected&gt;
+&lt;modelclass&gt;org.concord.mw2d.models.MolecularModel&lt;/modelclass&gt;
+&lt;model&gt;0&lt;/model&gt;
+&lt;groupid&gt;1241192770195&lt;/groupid&gt;
+&lt;script&gt;set action ADDA_ID;
+set %buttonSelected %dropH;
+cursor hcursor.gif (8,8);&lt;/script&gt;
+&lt;action&gt;Execute MW script&lt;/action&gt;</string>
+        </entry>
+        <entry key="timestamp">
+          <string>1271774092950</string>
+        </entry>
+        <entry key="target">
+          <string>org.concord.mw2d.models.ScriptAction</string>
+        </entry>
+      </properties>
+    </OTActionItem>
+    <OTActionItem>
+      <properties>
+        <entry key="script">
+          <string>set action ADDB_ID;
+set %buttonSelected %dropO;
+cursor ocursor.gif (14,14);</string>
+        </entry>
+        <entry key="name">
+          <string>Execute MW Script</string>
+        </entry>
+        <entry key="event">
+          <string>java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=,when=1271774096484,modifiers=Button1] on Execute MW script</string>
+        </entry>
+        <entry key="description">
+          <string>Execute MW script</string>
+        </entry>
+        <entry key="source">
+          <string>&lt;class&gt;org.concord.modeler.PageRadioButton&lt;/class&gt;
+&lt;title&gt;&lt;/title&gt;
+&lt;imagefile&gt;dropOxygenDOWN.png&lt;/imagefile&gt;
+&lt;imagefiledeselected&gt;dropOxygenUP.png&lt;/imagefiledeselected&gt;
+&lt;tooltip&gt;add an oxygen atom&lt;/tooltip&gt;
+&lt;selected&gt;true&lt;/selected&gt;
+&lt;modelclass&gt;org.concord.mw2d.models.MolecularModel&lt;/modelclass&gt;
+&lt;model&gt;0&lt;/model&gt;
+&lt;groupid&gt;1241192770195&lt;/groupid&gt;
+&lt;script&gt;set action ADDB_ID;
+set %buttonSelected %dropO;
+cursor ocursor.gif (14,14);&lt;/script&gt;
+&lt;action&gt;Execute MW script&lt;/action&gt;</string>
+        </entry>
+        <entry key="timestamp">
+          <string>1271774096485</string>
+        </entry>
+        <entry key="target">
+          <string>org.concord.mw2d.models.ScriptAction</string>
+        </entry>
+      </properties>
+    </OTActionItem>
+    <OTActionItem>
+      <properties>
+        <entry key="script">
+          <string>set action ADDC_ID;
+set %buttonSelected %dropC;
+cursor ccursor.gif (16,16);</string>
+        </entry>
+        <entry key="name">
+          <string>Execute MW Script</string>
+        </entry>
+        <entry key="event">
+          <string>java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=,when=1271774100069,modifiers=Button1] on Execute MW script</string>
+        </entry>
+        <entry key="description">
+          <string>Execute MW script</string>
+        </entry>
+        <entry key="source">
+          <string>&lt;class&gt;org.concord.modeler.PageRadioButton&lt;/class&gt;
+&lt;title&gt;&lt;/title&gt;
+&lt;imagefile&gt;dropCarbonDOWN.png&lt;/imagefile&gt;
+&lt;imagefiledeselected&gt;dropCarbonUP.png&lt;/imagefiledeselected&gt;
+&lt;tooltip&gt;add a carbon atom&lt;/tooltip&gt;
+&lt;selected&gt;true&lt;/selected&gt;
+&lt;modelclass&gt;org.concord.mw2d.models.MolecularModel&lt;/modelclass&gt;
+&lt;model&gt;0&lt;/model&gt;
+&lt;groupid&gt;1241192770195&lt;/groupid&gt;
+&lt;script&gt;set action ADDC_ID;
+set %buttonSelected %dropC;
+cursor ccursor.gif (16,16);&lt;/script&gt;
+&lt;action&gt;Execute MW script&lt;/action&gt;</string>
+        </entry>
+        <entry key="timestamp">
+          <string>1271774100069</string>
+        </entry>
+        <entry key="target">
+          <string>org.concord.mw2d.models.ScriptAction</string>
+        </entry>
+      </properties>
+    </OTActionItem>
+  </events>
+</OTModelerPage>

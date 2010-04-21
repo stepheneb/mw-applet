@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<otrunk id="ef93aeb8-4c97-11df-a3fa-2d5147f43dd6">
+  <imports>
+    <import class="org.concord.otrunk.OTStateRoot" />
+    <import class="org.concord.otrunk.user.OTUserObject" />
+    <import class="org.concord.otrunk.user.OTReferenceMap" />
+    <import class="org.concord.otrunk.ui.OTCardContainer" />
+    <import class="org.concord.framework.otrunk.wrapper.OTObjectSet" />
+    <import class="org.concord.otrunk.navigation.OTNavigationEvent" />
+    <import class="org.concord.otrunk.ui.OTSection" />
+    <import class="org.concord.otrunkmw.OTModelerPage" />
+    <import class="org.concord.aspects.mw.OTActionItem" />
+    <import class="org.concord.otrunk.labbook.OTLabbook" />
+    <import class="org.concord.otrunk.ui.OTText" />
+  </imports>
+  <objects>
+    <OTStateRoot formatVersionString="1.0">
+      <userMap>
+        <entry key="d13ab458-4c89-11df-a3fa-2d5147f43dd6">
+          <OTReferenceMap>
+            <user>
+              <OTUserObject id="d13ab458-4c89-11df-a3fa-2d5147f43dd6" name="Stephen Bannasch" />
+            </user>
+            <map>
+              <entry key="c2bc1220-136a-11de-8c30-0800200c9a66!/section-card-container">
+                <OTCardContainer>
+                  <viewedCards>
+                    <object refid="b4032390-3ac0-11de-8a39-0800200c9a66!/section_1" />
+                    <object refid="2767fe20-6c7d-11dc-8314-0800200c9a66!/section_1" />
+                  </viewedCards>
+                  <currentCard>
+                    <object refid="2767fe20-6c7d-11dc-8314-0800200c9a66!/section_1" />
+                  </currentCard>
+                </OTCardContainer>
+              </entry>
+              <entry key="c2bc1220-136a-11de-8c30-0800200c9a66!/nav-history">
+                <OTObjectSet>
+                  <objects>
+                    <OTNavigationEvent timestamp="1271774065576" type="opened">
+                      <object>
+                        <object refid="b4032390-3ac0-11de-8a39-0800200c9a66!/section_1" />
+                      </object>
+                    </OTNavigationEvent>
+                    <OTNavigationEvent timestamp="1271774065997" type="opened">
+                      <object>
+                        <object refid="6300c0a5-3989-11de-9bbf-a93eb4197402" />
+                      </object>
+                    </OTNavigationEvent>
+                    <OTNavigationEvent timestamp="1271774134048" type="closed">
+                      <object>
+                        <object refid="6300c0a5-3989-11de-9bbf-a93eb4197402" />
+                      </object>
+                    </OTNavigationEvent>
+                    <OTNavigationEvent timestamp="1271774134121" type="opened">
+                      <object>
+                        <object refid="15c510b9-398a-11de-9bbf-a93eb4197402" />
+                      </object>
+                    </OTNavigationEvent>
+                    <OTNavigationEvent timestamp="1271774146863" type="closed">
+                      <object>
+                        <object refid="15c510b9-398a-11de-9bbf-a93eb4197402" />
+                      </object>
+                    </OTNavigationEvent>
+                    <OTNavigationEvent timestamp="1271774146864" type="opened">
+                      <object>
+                        <object refid="cd42a18c-39a0-11de-ab21-cb7d5c45d404" />
+                      </object>
+                    </OTNavigationEvent>
+                    <OTNavigationEvent timestamp="1271780024242" type="closed">
+                      <object>
+                        <object refid="cd42a18c-39a0-11de-ab21-cb7d5c45d404" />
+                      </object>
+                    </OTNavigationEvent>
+                    <OTNavigationEvent timestamp="1271780030178" type="opened">
+                      <object>
+                        <object refid="971b006d-398b-11de-9bbf-a93eb4197402" />
+                      </object>
+                    </OTNavigationEvent>
+                    <OTNavigationEvent timestamp="1271780116964" type="closed">
+                      <object>
+                        <object refid="b4032390-3ac0-11de-8a39-0800200c9a66!/section_1" />
+                      </object>
+                    </OTNavigationEvent>
+                    <OTNavigationEvent timestamp="1271780116965" type="closed">
+                      <object>
+                        <object refid="971b006d-398b-11de-9bbf-a93eb4197402" />
+                      </object>
+                    </OTNavigationEvent>
+                    <OTNavigationEvent timestamp="1271780116979" type="opened">
+                      <object>
+                        <object refid="2767fe20-6c7d-11dc-8314-0800200c9a66!/section_1" />
+                      </object>
+                    </OTNavigationEvent>
+                    <OTNavigationEvent timestamp="1271780117615" type="opened">
+                      <object>
+                        <object refid="42f9b2f0-3a62-11de-8ae4-f5f8ac321f77" />
+                      </object>
+                    </OTNavigationEvent>
+                    <OTNavigationEvent timestamp="1271780128738" type="closed">
+                      <object>
+                        <object refid="2767fe20-6c7d-11dc-8314-0800200c9a66!/section_1" />
+                      </object>
+                    </OTNavigationEvent>
+                    <OTNavigationEvent timestamp="1271780128738" type="closed">
+                      <object>
+                        <object refid="42f9b2f0-3a62-11de-8ae4-f5f8ac321f77" />
+                      </object>
+                    </OTNavigationEvent>
+                  </objects>
+                </OTObjectSet>
+              </entry>
+              <entry key="b4032390-3ac0-11de-8a39-0800200c9a66!/section_1">
+                <OTSection>
+                  <north>
+                    <object refid="c2bc1220-136a-11de-8c30-0800200c9a66!/system/overlays[2]/deltaObjectMap['b4032390-3ac0-11de-8a39-0800200c9a66!/section_1']/header" />
+                  </north>
+                </OTSection>
+              </entry>
+              <entry key="ac51812d-3a54-11de-87fd-db993fdba086">
+                <OTModelerPage>
+                  <events>
+                    <OTActionItem>
+                      <properties>
+                        <entry key="script">
+                          <string>set action ADDA_ID;
+set %buttonSelected %dropH;
+cursor hcursor.gif (8,8);</string>
+                        </entry>
+                        <entry key="name">
+                          <string>Execute MW Script</string>
+                        </entry>
+                        <entry key="event">
+                          <string>java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=,when=1271774092949,modifiers=Button1] on Execute MW script</string>
+                        </entry>
+                        <entry key="description">
+                          <string>Execute MW script</string>
+                        </entry>
+                        <entry key="source">
+                          <string>&lt;class&gt;org.concord.modeler.PageRadioButton&lt;/class&gt;
+&lt;title&gt;&lt;/title&gt;
+&lt;imagefile&gt;dropHydrogenDOWN.png&lt;/imagefile&gt;
+&lt;imagefiledeselected&gt;dropHydrogenUP.png&lt;/imagefiledeselected&gt;
+&lt;tooltip&gt;add a hydrogen atom&lt;/tooltip&gt;
+&lt;selected&gt;true&lt;/selected&gt;
+&lt;modelclass&gt;org.concord.mw2d.models.MolecularModel&lt;/modelclass&gt;
+&lt;model&gt;0&lt;/model&gt;
+&lt;groupid&gt;1241192770195&lt;/groupid&gt;
+&lt;script&gt;set action ADDA_ID;
+set %buttonSelected %dropH;
+cursor hcursor.gif (8,8);&lt;/script&gt;
+&lt;action&gt;Execute MW script&lt;/action&gt;</string>
+                        </entry>
+                        <entry key="timestamp">
+                          <string>1271774092950</string>
+                        </entry>
+                        <entry key="target">
+                          <string>org.concord.mw2d.models.ScriptAction</string>
+                        </entry>
+                      </properties>
+                    </OTActionItem>
+                    <OTActionItem>
+                      <properties>
+                        <entry key="script">
+                          <string>set action ADDB_ID;
+set %buttonSelected %dropO;
+cursor ocursor.gif (14,14);</string>
+                        </entry>
+                        <entry key="name">
+                          <string>Execute MW Script</string>
+                        </entry>
+                        <entry key="event">
+                          <string>java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=,when=1271774096484,modifiers=Button1] on Execute MW script</string>
+                        </entry>
+                        <entry key="description">
+                          <string>Execute MW script</string>
+                        </entry>
+                        <entry key="source">
+                          <string>&lt;class&gt;org.concord.modeler.PageRadioButton&lt;/class&gt;
+&lt;title&gt;&lt;/title&gt;
+&lt;imagefile&gt;dropOxygenDOWN.png&lt;/imagefile&gt;
+&lt;imagefiledeselected&gt;dropOxygenUP.png&lt;/imagefiledeselected&gt;
+&lt;tooltip&gt;add an oxygen atom&lt;/tooltip&gt;
+&lt;selected&gt;true&lt;/selected&gt;
+&lt;modelclass&gt;org.concord.mw2d.models.MolecularModel&lt;/modelclass&gt;
+&lt;model&gt;0&lt;/model&gt;
+&lt;groupid&gt;1241192770195&lt;/groupid&gt;
+&lt;script&gt;set action ADDB_ID;
+set %buttonSelected %dropO;
+cursor ocursor.gif (14,14);&lt;/script&gt;
+&lt;action&gt;Execute MW script&lt;/action&gt;</string>
+                        </entry>
+                        <entry key="timestamp">
+                          <string>1271774096485</string>
+                        </entry>
+                        <entry key="target">
+                          <string>org.concord.mw2d.models.ScriptAction</string>
+                        </entry>
+                      </properties>
+                    </OTActionItem>
+                    <OTActionItem>
+                      <properties>
+                        <entry key="script">
+                          <string>set action ADDC_ID;
+set %buttonSelected %dropC;
+cursor ccursor.gif (16,16);</string>
+                        </entry>
+                        <entry key="name">
+                          <string>Execute MW Script</string>
+                        </entry>
+                        <entry key="event">
+                          <string>java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=,when=1271774100069,modifiers=Button1] on Execute MW script</string>
+                        </entry>
+                        <entry key="description">
+                          <string>Execute MW script</string>
+                        </entry>
+                        <entry key="source">
+                          <string>&lt;class&gt;org.concord.modeler.PageRadioButton&lt;/class&gt;
+&lt;title&gt;&lt;/title&gt;
+&lt;imagefile&gt;dropCarbonDOWN.png&lt;/imagefile&gt;
+&lt;imagefiledeselected&gt;dropCarbonUP.png&lt;/imagefiledeselected&gt;
+&lt;tooltip&gt;add a carbon atom&lt;/tooltip&gt;
+&lt;selected&gt;true&lt;/selected&gt;
+&lt;modelclass&gt;org.concord.mw2d.models.MolecularModel&lt;/modelclass&gt;
+&lt;model&gt;0&lt;/model&gt;
+&lt;groupid&gt;1241192770195&lt;/groupid&gt;
+&lt;script&gt;set action ADDC_ID;
+set %buttonSelected %dropC;
+cursor ccursor.gif (16,16);&lt;/script&gt;
+&lt;action&gt;Execute MW script&lt;/action&gt;</string>
+                        </entry>
+                        <entry key="timestamp">
+                          <string>1271774100069</string>
+                        </entry>
+                        <entry key="target">
+                          <string>org.concord.mw2d.models.ScriptAction</string>
+                        </entry>
+                      </properties>
+                    </OTActionItem>
+                  </events>
+                </OTModelerPage>
+              </entry>
+              <entry key="b4032390-3ac0-11de-8a39-0800200c9a66!/album">
+                <OTLabbook timesShown="1" />
+              </entry>
+              <entry key="b4032390-3ac0-11de-8a39-0800200c9a66!/activity-card-container">
+                <OTCardContainer>
+                  <currentCard>
+                    <object refid="971b006d-398b-11de-9bbf-a93eb4197402" />
+                  </currentCard>
+                  <viewedCards>
+                    <object refid="6300c0a5-3989-11de-9bbf-a93eb4197402" />
+                    <object refid="15c510b9-398a-11de-9bbf-a93eb4197402" />
+                    <object refid="cd42a18c-39a0-11de-ab21-cb7d5c45d404" />
+                    <object refid="971b006d-398b-11de-9bbf-a93eb4197402" />
+                  </viewedCards>
+                </OTCardContainer>
+              </entry>
+              <entry key="87639b0a-3a50-11de-87fd-db993fdba086">
+                <OTModelerPage>
+                  <events>
+                    <OTActionItem>
+                      <properties>
+                        <entry key="script">
+                          <string>run;</string>
+                        </entry>
+                        <entry key="name">
+                          <string>Execute MW Script</string>
+                        </entry>
+                        <entry key="event">
+                          <string>java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=run,when=1271774167374,modifiers=Button1] on Execute MW script</string>
+                        </entry>
+                        <entry key="description">
+                          <string>Execute MW script</string>
+                        </entry>
+                        <entry key="source">
+                          <string>&lt;class&gt;org.concord.modeler.PageButton&lt;/class&gt;
+&lt;title&gt;run&lt;/title&gt;
+&lt;tooltip&gt;run the model&lt;/tooltip&gt;
+&lt;opaque&gt;false&lt;/opaque&gt;
+&lt;modelclass&gt;org.concord.mw2d.models.ReactionModel&lt;/modelclass&gt;
+&lt;model&gt;4&lt;/model&gt;
+&lt;script&gt;run;&lt;/script&gt;
+&lt;action&gt;Execute MW script&lt;/action&gt;</string>
+                        </entry>
+                        <entry key="timestamp">
+                          <string>1271774167375</string>
+                        </entry>
+                        <entry key="target">
+                          <string>org.concord.mw2d.models.ScriptAction</string>
+                        </entry>
+                      </properties>
+                    </OTActionItem>
+                    <OTActionItem>
+                      <properties>
+                        <entry key="script">
+                          <string>stop;
+define %molecule rand()*(%number_of_molecules-1);
+define %atom1 0;
+set %atom1 atomOfMolecule(%molecule,0);
+define %atom2 0;
+set %atom2 atomOfMolecule(%molecule,1);
+while ((%atom[%atom1].id != 1) or (%atom[%atom1].ry &lt; 10) or (%atom[%atom1].rx &gt; 30));
+print id: %atom[%atom1].id    x: %atom[%atom1].rx   y: %atom[%atom1].ry;
+	set %molecule rand()*(%number_of_molecules-1);
+	set %atom1 atomOfMolecule(%molecule,0);
+endwhile;
+set %atom2 atomOfMolecule(%molecule,1);
+define %bond 0;
+set %bond whichrbond(%atom1,%atom2);
+define %sparkX 0;
+set %sparkX (%atom[%atom1].rx+%atom[%atom2].rx)/2;
+define %sparkY 0;
+set %sparkY (%atom[%atom1].ry+%atom[%atom2].ry)/2;
+add image spark.gif (%sparkX, "%sparkY-4.3"); //make point of spark appear at bond.
+select image none;
+select atom %atom1 or %atom2;
+set visible off;
+delay 0.25;
+set visible on;
+delay 0.25;
+set visible off;
+delay 0.25;
+set visible on;
+delay 0.25;
+select image all;
+remove;
+select rbond %bond;
+remove;
+set atom[%atom1].vx -4000; // set the two radicals to fly off in opposite directions
+set atom[%atom2].vx 4000;
+run;</string>
+                        </entry>
+                        <entry key="name">
+                          <string>Execute MW Script</string>
+                        </entry>
+                        <entry key="event">
+                          <string>java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=Spark,when=1271774175711,modifiers=Button1] on Execute MW script</string>
+                        </entry>
+                        <entry key="description">
+                          <string>Execute MW script</string>
+                        </entry>
+                        <entry key="source">
+                          <string>&lt;class&gt;org.concord.modeler.PageButton&lt;/class&gt;
+&lt;title&gt;Spark&lt;/title&gt;
+&lt;opaque&gt;false&lt;/opaque&gt;
+&lt;modelclass&gt;org.concord.mw2d.models.ReactionModel&lt;/modelclass&gt;
+&lt;model&gt;4&lt;/model&gt;
+&lt;disabled_at_script&gt;true&lt;/disabled_at_script&gt;
+&lt;script&gt;stop;
+define %molecule rand()*(%number_of_molecules-1);
+define %atom1 0;
+set %atom1 atomOfMolecule(%molecule,0);
+define %atom2 0;
+set %atom2 atomOfMolecule(%molecule,1);
+while ((%atom[%atom1].id != 1) or (%atom[%atom1].ry &amp;lt; 10) or (%atom[%atom1].rx &amp;gt; 30));
+print id: %atom[%atom1].id    x: %atom[%atom1].rx   y: %atom[%atom1].ry;
+	set %molecule rand()*(%number_of_molecules-1);
+	set %atom1 atomOfMolecule(%molecule,0);
+endwhile;
+set %atom2 atomOfMolecule(%molecule,1);
+define %bond 0;
+set %bond whichrbond(%atom1,%atom2);
+define %sparkX 0;
+set %sparkX (%atom[%atom1].rx+%atom[%atom2].rx)/2;
+define %sparkY 0;
+set %sparkY (%atom[%atom1].ry+%atom[%atom2].ry)/2;
+add image spark.gif (%sparkX, &amp;quot;%sparkY-4.3&amp;quot;); //make point of spark appear at bond.
+select image none;
+select atom %atom1 or %atom2;
+set visible off;
+delay 0.25;
+set visible on;
+delay 0.25;
+set visible off;
+delay 0.25;
+set visible on;
+delay 0.25;
+select image all;
+remove;
+select rbond %bond;
+remove;
+set atom[%atom1].vx -4000; // set the two radicals to fly off in opposite directions
+set atom[%atom2].vx 4000;
+run;&lt;/script&gt;
+&lt;action&gt;Execute MW script&lt;/action&gt;</string>
+                        </entry>
+                        <entry key="timestamp">
+                          <string>1271774175712</string>
+                        </entry>
+                        <entry key="target">
+                          <string>org.concord.mw2d.models.ScriptAction</string>
+                        </entry>
+                      </properties>
+                    </OTActionItem>
+                    <OTActionItem>
+                      <properties>
+                        <entry key="script">
+                          <string>stop;</string>
+                        </entry>
+                        <entry key="name">
+                          <string>Execute MW Script</string>
+                        </entry>
+                        <entry key="event">
+                          <string>java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=stop,when=1271774188799,modifiers=Button1] on Execute MW script</string>
+                        </entry>
+                        <entry key="description">
+                          <string>Execute MW script</string>
+                        </entry>
+                        <entry key="source">
+                          <string>&lt;class&gt;org.concord.modeler.PageButton&lt;/class&gt;
+&lt;title&gt;stop&lt;/title&gt;
+&lt;tooltip&gt;stop the model&lt;/tooltip&gt;
+&lt;opaque&gt;false&lt;/opaque&gt;
+&lt;modelclass&gt;org.concord.mw2d.models.ReactionModel&lt;/modelclass&gt;
+&lt;model&gt;4&lt;/model&gt;
+&lt;script&gt;stop;&lt;/script&gt;
+&lt;action&gt;Execute MW script&lt;/action&gt;</string>
+                        </entry>
+                        <entry key="timestamp">
+                          <string>1271774188804</string>
+                        </entry>
+                        <entry key="target">
+                          <string>org.concord.mw2d.models.ScriptAction</string>
+                        </entry>
+                      </properties>
+                    </OTActionItem>
+                  </events>
+                </OTModelerPage>
+              </entry>
+              <entry key="5b56caef-3a51-11de-87fd-db993fdba086">
+                <OTModelerPage>
+                  <events>
+                    <OTActionItem>
+                      <properties>
+                        <entry key="script">
+                          <string>run;</string>
+                        </entry>
+                        <entry key="name">
+                          <string>Execute MW Script</string>
+                        </entry>
+                        <entry key="event">
+                          <string>java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=run,when=1271780083635,modifiers=Button1] on Execute MW script</string>
+                        </entry>
+                        <entry key="description">
+                          <string>Execute MW script</string>
+                        </entry>
+                        <entry key="source">
+                          <string>&lt;class&gt;org.concord.modeler.PageButton&lt;/class&gt;
+&lt;title&gt;run&lt;/title&gt;
+&lt;tooltip&gt;run the model&lt;/tooltip&gt;
+&lt;opaque&gt;false&lt;/opaque&gt;
+&lt;modelclass&gt;org.concord.mw2d.models.ReactionModel&lt;/modelclass&gt;
+&lt;model&gt;4&lt;/model&gt;
+&lt;script&gt;run;&lt;/script&gt;
+&lt;action&gt;Execute MW script&lt;/action&gt;</string>
+                        </entry>
+                        <entry key="timestamp">
+                          <string>1271780083635</string>
+                        </entry>
+                        <entry key="target">
+                          <string>org.concord.mw2d.models.ScriptAction</string>
+                        </entry>
+                      </properties>
+                    </OTActionItem>
+                    <OTActionItem>
+                      <properties>
+                        <entry key="script">
+                          <string>stop;</string>
+                        </entry>
+                        <entry key="name">
+                          <string>Execute MW Script</string>
+                        </entry>
+                        <entry key="event">
+                          <string>java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=stop,when=1271780093707,modifiers=Button1] on Execute MW script</string>
+                        </entry>
+                        <entry key="description">
+                          <string>Execute MW script</string>
+                        </entry>
+                        <entry key="source">
+                          <string>&lt;class&gt;org.concord.modeler.PageButton&lt;/class&gt;
+&lt;title&gt;stop&lt;/title&gt;
+&lt;tooltip&gt;stop the model&lt;/tooltip&gt;
+&lt;opaque&gt;false&lt;/opaque&gt;
+&lt;modelclass&gt;org.concord.mw2d.models.ReactionModel&lt;/modelclass&gt;
+&lt;model&gt;4&lt;/model&gt;
+&lt;script&gt;stop;&lt;/script&gt;
+&lt;action&gt;Execute MW script&lt;/action&gt;</string>
+                        </entry>
+                        <entry key="timestamp">
+                          <string>1271780093708</string>
+                        </entry>
+                        <entry key="target">
+                          <string>org.concord.mw2d.models.ScriptAction</string>
+                        </entry>
+                      </properties>
+                    </OTActionItem>
+                  </events>
+                </OTModelerPage>
+              </entry>
+              <entry key="bfbadacd-39a3-11de-ab21-cb7d5c45d404/input">
+                <OTText text="no, no spark" />
+              </entry>
+              <entry key="2767fe20-6c7d-11dc-8314-0800200c9a66!/section_1">
+                <OTSection>
+                  <north>
+                    <object refid="c2bc1220-136a-11de-8c30-0800200c9a66!/system/overlays[2]/deltaObjectMap['2767fe20-6c7d-11dc-8314-0800200c9a66!/section_1']/header" />
+                  </north>
+                </OTSection>
+              </entry>
+            </map>
+          </OTReferenceMap>
+        </entry>
+      </userMap>
+    </OTStateRoot>
+  </objects>
+</otrunk>
+

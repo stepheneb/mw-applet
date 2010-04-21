@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>MW Applet/Javascript reporting test</title>
+  <link rel="stylesheet" href="stylesheet/test.css" type="text/css" />
+  <script type="text/javascript" src="javascript/library.js"></script>
+  <script type="text/javascript" src="javascript/jquery-1.4.js"></script>
+</head>
+<body>
+  <div id="main" class="page-content">
+    <h3 class="page-title namespace">MW Applet/Javascript reporting test</h3>
+    <div class="two-column-left clearfix">
+      <div id="applet-container">
+        <applet id="myapplet"
+          archive="
+          lib/mw-aspects.jar,
+          lib/aspectjrt.jar,
+          lib/data.jar,
+          lib/framework.jar,
+          lib/otrunk.jar,
+          lib/frameworkview.jar,
+          lib/otrunk-ui.jar,
+          lib/loader.jar,
+          lib/swing.jar,
+          lib/jug.jar,
+          lib/jdom.jar" 
+          code="org.concord.otrunk.applet.OTAppletViewer" 
+          width="100%" height="100%">
+          <param name="url" value="models/test-cml.otml"/>
+        </applet>
+      </div>
+    </div>
+    <div class="two-column-right clearfix">
+      <p>This page embeds an instrumented applet version of Molecular Workbench which supports
+        logging of user interactions with model and scripted controls. </p>
+      <p>Try clicking the <b>Open</b>, <b>Pause</b> and <b>Reset</b> scripted buttons along with the 
+        model player controls then click the <b>Generate Report</b> button to see a
+        detailed presentation of the data that can be saved.</p>
+      <p>This particular model simulating water flowing does not have any variables so the report
+        consists only of user ActionItems.</p>
+    </div>
+    <div class="clearfix"></div>
+    <div class="report">
+      <p><input type="button" value="Generate Report" onclick="report('myapplet');" /></p>
+      <div id="report-container"></div>
+    </div>
+  </div>
+</body>
+</html>

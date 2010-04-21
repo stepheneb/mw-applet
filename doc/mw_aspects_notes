@@ -1,0 +1,1945 @@
+[dev]$ curl -H "accept-encoding:pack200-gzip" -I http://jnlp.concord.org/dev/org/concord/aspects/mw-aspects/mw-aspects.jar?version-id=0.1.0-20100416.170138-213
+HTTP/1.1 200 OK
+Date: Tue, 20 Apr 2010 14:44:17 GMT
+Server: Apache-Coyote/1.1
+x-java-jnlp-version-id: 0.1.0-20100416.170138-213
+Last-Modified: Fri, 16 Apr 2010 19:43:36 GMT
+content-encoding: pack200-gzip
+Content-Type: application/java-archive
+Content-Length: 3496211
+Connection: close
+
+
+[dev]$ curl -H "accept-encoding:pack200-gzip" -I http://jnlp.concord.org/dev/org/aspectj/aspectjrt/aspectjrt.jar?version-id=1.6.5
+HTTP/1.1 200 OK
+Date: Tue, 20 Apr 2010 14:45:52 GMT
+Server: Apache-Coyote/1.1
+x-java-jnlp-version-id: 1.6.5
+Last-Modified: Fri, 11 Dec 2009 17:34:48 GMT
+content-encoding: pack200-gzip
+Content-Type: application/java-archive
+Content-Length: 37248
+Connection: close
+
+[dev]$ curl -H "accept-encoding:pack200-gzip" -I http://jnlp.concord.org/dev/rhino/js/js.jar?version-id=1.6R5
+HTTP/1.1 200 OK
+Date: Tue, 20 Apr 2010 14:47:40 GMT
+Server: Apache-Coyote/1.1
+x-java-jnlp-version-id: 1.6R5
+Last-Modified: Tue, 23 Jun 2009 01:14:42 GMT
+content-encoding: pack200-gzip
+Content-Type: application/java-archive
+Content-Length: 289376
+Connection: close
+
+
+
+<jnlp spec="1.0+" codebase="http://jnlp.concord.org/dev"> 
+	<information> 
+		<title>LOOPS</title> 
+		<vendor>The Concord Consortium</vendor> 
+		<homepage href="http://loops.concord.org" /> 
+		<description>The software for running the LOOPS activities.</description> 
+		<icon href="http://loops.concord.org/images/loops-transparent-background-64x64.gif" height="64" width="64" /> 
+	</information> 
+	<security> 
+		<all-permissions /> 
+	</security> 
+	<resources os="Mac OS X" arch="ppc i386"> 
+		<j2se version="1.5" max-heap-size="128m" initial-heap-size="32m" />
+	</resources> 
+	<resources os="Mac OS X" arch="x86_64"> 
+		<j2se version="1.5" max-heap-size="128m" initial-heap-size="32m" java-vm-args="-d32" />
+	</resources> 
+	<resources> 
+		<j2se version="1.5+" max-heap-size="128m" initial-heap-size="32m" /> 
+		<jar href="org/concord/otrunk-nlogo41/otrunk-nlogo41.jar" version="0.1.0-20100416.170138-269" /> 
+		<jar href="org/concord/framework/framework.jar" version="0.1.0-20100416.170138-511" /> 
+		<jar href="org/concord/loader/loader.jar" version="0.1.0-20100416.170138-270" /> 
+		<jar href="org/concord/nlogo/netlogo4/netlogo4.jar" version="4.1-rc3.1" /> 
+		<jar href="org/concord/external/log/log4j/log4j.jar" version="1.2.15" /> 
+		<jar href="org/concord/data/data.jar" version="0.2.0-20100416.170138-220" /> 
+		<jar href="org/concord/swing/swing.jar" version="0.1.0-20100416.170138-339" /> 
+		<jar href="org/telscenter/sail-otrunk/sail-otrunk.jar" version="0.1.0-20091028.054139-1083" /> 
+		<jar href="org/concord/otrunk/otrunk.jar" version="0.2.0-20100416.170138-179" /> 
+		<jar href="org/concord/frameworkview/frameworkview.jar" version="0.1.0-20100416.170138-347" /> 
+		<jar href="jug/jug/jug.jar" version="1.1.2" /> 
+		<jar href="jdom/jdom/jdom.jar" version="1.0" /> 
+		<jar href="org/concord/apple-support/apple-support.jar" version="0.1.0-20100416.170138-276" /> 
+		<jar href="org/concord/utilities/response-cache/response-cache.jar" version="0.1.0-20100416.170138-178" /> 
+		<jar href="net/sf/sail/sail-core/sail-core.jar" version="0.4.5-20100301.211334-13" /> 
+		<jar href="commons-beanutils/commons-beanutils/commons-beanutils.jar" version="1.7.0" /> 
+		<jar href="commons-logging/commons-logging/commons-logging.jar" version="1.0.4" /> 
+		<jar href="commons-lang/commons-lang/commons-lang.jar" version="2.0" /> 
+		<jar href="commons-io/commons-io/commons-io.jar" version="1.1" /> 
+		<jar href="log4j/log4j/log4j.jar" version="1.2.8" /> 
+		<jar href="rhino/js/js.jar" version="1.6R5" /> 
+		<jar href="script/jsr223/jsr223.jar" version="1.0" /> 
+		<jar href="xstream/xstream/xstream.jar" version="1.1.2" /> 
+		<jar href="net/sf/sail/sail-data-emf/sail-data-emf.jar" version="0.1.0-20100415.152037-56" main="true" /> 
+		<jar href="org/eclipse/emf/ecore/ecore.jar" version="2.2.0" /> 
+		<jar href="org/eclipse/emf/common/common.jar" version="2.2.0" /> 
+		<jar href="org/eclipse/emf/ecore-xmi/ecore-xmi.jar" version="2.2.0" /> 
+		<jar href="org/concord/datagraph/datagraph.jar" version="0.2.0-20100416.170138-212" /> 
+		<jar href="org/concord/graphutil/graphutil.jar" version="0.1.0-20100416.170138-509" /> 
+		<jar href="org/concord/graph/graph.jar" version="0.1.0-20100416.170138-307" /> 
+		<jar href="org/concord/aspects/mw-aspects/mw-aspects.jar" version="0.1.0-20100416.170138-213" /> 
+		<jar href="org/aspectj/aspectjrt/aspectjrt.jar" version="1.6.5" /> 
+		<jar href="org/concord/otrunk/data-util/data-util.jar" version="0.1.0-20100416.170138-1020" /> 
+		<jar href="org/concord/otrunk-ui/otrunk-ui.jar" version="0.1.0-20100416.170138-909" /> 
+		<jar href="org/concord/external/sound/jlayer/jlayer.jar" version="1.0" /> 
+		<jar href="org/concord/external/sound/mp3spi/mp3spi.jar" version="1.9.4" /> 
+		<jar href="org/concord/external/sound/tritonus/tritonus.jar" version="0.1" /> 
+		<jar href="org/concord/external/ekit/ekit.jar" version="1.0" /> 
+		<jar href="org/concord/math/math.jar" version="0.1.0-20100416.170138-270" /> 
+		<jar href="org/concord/external/jep/jep.jar" version="1.0" /> 
+		<jar href="org/concord/external/vecmath/vecmath.jar" version="2.0" /> 
+		<jar href="org/concord/sensor/sensor.jar" version="0.2.0-20100416.170138-217" /> 
+		<jar href="org/concord/external/rxtx/rxtx-comm/rxtx-comm.jar" version="2.1.7-r2" /> 
+		<jar href="org/concord/otrunk/otrunk-swingx/otrunk-swingx.jar" version="0.1.0-20100416.170138-473" /> 
+		<jar href="org/swinglabs/swingx/swingx.jar" version="0.9.5-2" /> 
+		<jar href="org/concord/sensor-native/sensor-native.jar" version="0.1.0-20100416.170138-411" /> 
+		<jar href="org/concord/sensor/sensor-vernier/sensor-vernier.jar" version="0.2.0-20100416.170138-221" /> 
+		<jar href="org/concord/sensor/labpro-usb/labpro-usb.jar" version="0.2.0-20100416.170138-156" /> 
+		<jar href="org/concord/sensor/labquest-jna/labquest-jna.jar" version="0.1.0-20100416.170138-163" /> 
+		<jar href="org/concord/external/jna/jna-jws/jna-jws.jar" version="3.0.9" /> 
+		<jar href="org/concord/sensor/sensor-dataharvest/sensor-dataharvest.jar" version="0.1.0-20090827.195540-10" /> 
+		<jar href="org/concord/ftdi-serial-wrapper/ftdi-serial-wrapper.jar" version="0.1.0-20100416.170138-273" /> 
+		<jar href="org/concord/otrunk/ot-script/ot-script-api/ot-script-api.jar" version="0.1.0-20100416.170138-565" /> 
+		<jar href="org/concord/otrunk/ot-script/ot-bsf/ot-bsf.jar" version="0.1.0-20100416.170138-582" /> 
+		<jar href="bsf/bsf/bsf.jar" version="2.4.0" /> 
+		<jar href="org/concord/otrunk/ot-script/ot-javascript/ot-javascript.jar" version="0.1.0-20100416.170138-578" /> 
+		<jar href="org/concord/otrunk/ot-script/ot-script-view/ot-script-view.jar" version="0.1.0-20100416.170138-539" /> 
+		<jar href="org/concord/otrunk/ot-script/ot-jruby/ot-jruby.jar" version="0.1.0-20100416.170138-571" /> 
+		<jar href="org/jruby/jruby-complete/jruby-complete.jar" version="1.1.4" /> 
+		<jar href="org/concord/otrunk/otrunk-intrasession/otrunk-intrasession.jar" version="0.1.0-20100416.170138-648" /> 
+		<jar href="org/concord/utilities/proxy/proxy.jar" version="0.1.0-20100415.150214-37" /> 
+		<jar href="org/mortbay/jetty/jetty/jetty.jar" version="6.1.20" /> 
+		<jar href="org/mortbay/jetty/jetty-util/jetty-util.jar" version="6.1.20" /> 
+		<jar href="org/mortbay/jetty/servlet-api/servlet-api.jar" version="2.5-20081211" /> 
+		<jar href="org/jdesktop/swing-worker/swing-worker.jar" version="1.1" /> 
+		<jar href="org/concord/otrunk/otrunk-report-libraries/otrunk-report-libraries.jar" version="0.1.0-20100416.170138-163" /> 
+		<property name="maven.jnlp.version" value="loops-otrunk-mw-logging-0.1.0-20100416.194308" /> 
+		<property name="otrunk.view.frame_title" value="LOOPS DIY - 25: Chem Draw - Current" /> 
+	</resources> 
+	<resources os="Linux"> 
+		<nativelib href="org/concord/external/rxtx/rxtx-serial/rxtx-serial-linux-nar.jar" version="2.1.7-r2" /> 
+	</resources> 
+	<resources os="Windows"> 
+		<nativelib href="org/concord/sensor/vernier/vernier-goio/vernier-goio-win32-nar.jar" version="1.4.0" /> 
+		<nativelib href="org/concord/sensor/labpro-usb-native/labpro-usb-native-win32-nar.jar" version="0.2.0-20090323.155823-1" /> 
+		<nativelib href="org/concord/external/jna/jna-jnidispatch/jna-jnidispatch-win32-nar.jar" version="3.0.9" /> 
+		<nativelib href="org/concord/ftdi-serial-wrapper-native/ftdi-serial-wrapper-native-win32-nar.jar" version="0.1.0-20070303.181906-4" /> 
+		<nativelib href="org/concord/external/rxtx/rxtx-serial/rxtx-serial-win32-nar.jar" version="2.1.7-r2" /> 
+	</resources> 
+	<resources os="Mac OS X"> 
+		<nativelib href="org/concord/sensor/vernier/vernier-goio/vernier-goio-macosx-nar.jar" version="1.4.0" /> 
+		<nativelib href="org/concord/external/jna/jna-jnidispatch/jna-jnidispatch-macosx-nar.jar" version="3.0.9" /> 
+		<nativelib href="org/concord/external/rxtx/rxtx-serial/rxtx-serial-macosx-nar.jar" version="2.1.7-r2" /> 
+	</resources> 
+	<application-desc main-class="net.sf.sail.emf.launch.EMFLauncher2"> 
+		<argument>http://saildataservice.concord.org/22/offering/9614/config/143282/1?sailotrunk.otmlurl=http%3A%2F%2Floops.diy.concord.org%2Fexternal_otrunk_activities%2F25%2Foverlay_otml%2F6%2F2%2F1613&amp;jnlp_properties=otrunk.view.frame_title%3DLOOPS%20DIY%20-%2025%3A%20Chem%20Draw%20-%20Current</argument>
+	</application-desc>
+</jnlp>
+
+
+
+Last login: Tue Apr 20 10:42:00 on ttys020
+You have mail.
+[dev]$ curl -i http://loops.diy.concord.org/external_otrunk_activities/25/overlay_otml/6/2/1613
+HTTP/1.1 200 OK
+Date: Tue, 20 Apr 2010 14:50:48 GMT
+Server: Mongrel 1.1.5
+Status: 200 OK
+X-Runtime: 0.24610
+ETag: "4a6e007a71bc59835536fd3fbbb1dcda"
+Cache-Control: private, max-age=0, must-revalidate
+Content-Type: application/xml; charset=utf-8
+Content-Length: 2217
+Set-Cookie: _LOOPS_Do_It_Yourself_8jzY4dj6BrlteA8b_o_Rdg____session_id=e3afa0bb095e3b2e98b71e456819c41c; domain=.concord.org; path=/
+Connection: close
+
+<otrunk id="ffef96b2-2624-11df-a27c-001ec94098a1" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:lxslt="http://xml.apache.org/xslt">
+  <imports>
+    <import class="org.concord.otrunk.OTIncludeRootObject"/>
+    <import class="org.concord.otrunk.OTSystem"/>
+    <import class="org.concord.otrunk.OTInclude"/>
+    <import class="org.concord.otrunk.view.OTGroupListManager"/>
+    <import class="org.concord.otrunk.view.OTGroupMember"/>
+    <import class="org.concord.otrunk.user.OTUserObject"/>
+  </imports>
+  <objects>
+    <OTSystem local_id="system">
+      <includes>
+        <OTInclude href="http://svn.concord.org/svn/projects/trunk/common/java/otrunk/otrunk-examples/LOOPS/chem-draw-accordion.otml"/>
+      </includes>
+      <bundles>
+        <object refid="8d880970-c22a-11dc-95ff-0800200c9a66"/>
+        <object refid="c2bc1220-136a-11de-8c30-0800200c9a66!/system/bundles[1]"/>
+        <object refid="c2bc1220-136a-11de-8c30-0800200c9a66!/system/bundles[2]"/>
+        <object refid="c2bc1220-136a-11de-8c30-0800200c9a66!/system/bundles[3]"/>
+        <object refid="602561d0-6041-4b48-b37c-27d833b2b205"/>
+        <object refid="c2bc1220-136a-11de-8c30-0800200c9a66!/system/bundles[5]"/>
+        <OTGroupListManager>
+          <userList>
+            <OTGroupMember name="Stephen Bannasch" uuid="b02e346c-5f15-11dd-a820-001ec94098a1" isCurrentUser="true" passwordHash="fd035914661eb4f8b00a57be66a2be2b" dataURL="http://webdav.diy.concord.org//seymour.concord.org/loops//25/1613-data.otml">
+              <userObject>
+                <OTUserObject id="b7b5dc68-4c89-11df-aae9-001ec94098a1"/>
+              </userObject>
+            </OTGroupMember>
+          </userList>
+        </OTGroupListManager>
+      </bundles>
+      <overlays>
+        <OTIncludeRootObject href="http://webdav.diy.concord.org//seymour.concord.org/loops//25/1613.otml"/>
+        <object refid="6cc8e2b0-c44e-11dc-95ff-0800200c9a66"/>
+        <object refid="b5d8b4a0-db35-11dc-95ff-0800200c9a66"/>
+        <object refid="c2bc1220-136a-11de-8c30-0800200c9a66!/system/overlays[2]"/>
+      </overlays>
+      <root>
+        <object refid="c2bc1220-136a-11de-8c30-0800200c9a66!/system/root"/>
+      </root>
+    </OTSystem>
+  </objects>
+</otrunk>
+
+[dev]$ curl -i http://svn.concord.org/svn/projects/trunk/common/java/otrunk/otrunk-examples/LOOPS/chem-draw-accordion.otml
+HTTP/1.1 200 OK
+Date: Tue, 20 Apr 2010 14:54:08 GMT
+Server: Apache/2.2.3 (Red Hat)
+Last-Modified: Thu, 04 Jun 2009 19:16:39 GMT
+ETag: "19049//trunk/common/java/otrunk/otrunk-examples/LOOPS/chem-draw-accordion.otml"
+Accept-Ranges: bytes
+Content-Length: 7107
+Vary: Accept-Encoding
+Content-Type: text/plain; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<otrunk id="c2bc1220-136a-11de-8c30-0800200c9a66">
+  <imports>
+    <import class="org.concord.otrunk.OTSystem" />
+    <import class="org.concord.otrunk.OTInclude" />
+    <import class="org.concord.otrunk.view.OTViewBundle" />
+    <import class="org.concord.framework.otrunk.view.OTFrame" />
+    <import class="org.concord.otrunk.view.OTViewEntry" />
+    <import class="org.concord.otrunk.script.OTScriptEngineBundle" />
+    <import class="org.concord.otrunk.script.OTScriptEngineEntry" />
+    <import class="org.concord.sensor.state.OTInterfaceManager" />
+    <import class="org.concord.sensor.state.OTDeviceConfig" />
+    <import class="org.concord.otrunk.overlay.OTOverlay" />
+    <import class="org.concord.otrunk.ui.OTSection" />
+    <import class="org.concord.otrunk.view.document.OTCompoundDoc" />
+    <import class="org.concord.otrunk.ui.menu.OTNavBar" />
+    <import class="org.concord.otrunk.ui.OTUDLContainer" />
+    <import class="org.concord.otrunk.view.OTViewChild" />
+    <import class="org.concord.otrunk.ui.menu.OTMenu" />
+    <import class="org.concord.otrunk.ui.OTCardContainer" />
+    <import class="org.concord.otrunk.ui.menu.OTMenuRule" />
+    <import class="org.concord.otrunk.util.OTLabbookBundle" />
+    <import class="org.concord.otrunk.navigation.OTNavigationHistoryService" />
+    <import class="org.concord.framework.otrunk.wrapper.OTObjectSet" />
+  </imports>
+  <objects>  
+    <OTSystem local_id="system">
+      <includes>
+        <OTInclude href="global-imports/loops-view-bundle.otml" />
+        <OTInclude href="chem-simulation-activity.otml" />
+        <OTInclude href="chem-draw-activity.otml" />
+      </includes>
+      <bundles>
+        <!--  the main view bundle -->
+        <object refid="8d880970-c22a-11dc-95ff-0800200c9a66" />
+        <!-- customized view bundle -->
+        <OTViewBundle showLeftPanel="false">
+          <frame>
+            <OTFrame useScrollPane="false" width="1000" height="700" />
+          </frame>
+          <views>
+            <OTViewEntry local_id="container_view" objectClass="org.concord.otrunk.ui.OTUDLContainer" viewClass="org.concord.otrunk.ui.OTUDLContainerView" />
+            <OTViewEntry objectClass="org.concord.otrunk.ui.menu.OTMenu" viewClass="org.concord.otrunk.swingx.OTMenuAccordionSectionView" />
+          </views>
+        </OTViewBundle>
+        <!-- default settings -->
+        <OTScriptEngineBundle>
+          <engines>
+            <OTScriptEngineEntry objectClass="org.concord.otrunk.script.jruby.OTJRuby" engineClass="org.concord.otrunk.script.jruby.OTJRubyEngine" />
+            <OTScriptEngineEntry objectClass="org.concord.otrunk.script.js.OTJavascript" engineClass="org.concord.otrunk.script.js.OTJavascriptEngine" />
+          </engines>
+        </OTScriptEngineBundle>
+        <OTInterfaceManager>
+          <deviceConfigs>
+            <OTDeviceConfig configString="none" deviceId="10" />
+          </deviceConfigs>
+        </OTInterfaceManager>
+        <OTNavigationHistoryService id="602561d0-6041-4b48-b37c-27d833b2b205">
+          <navigationHistory>
+            <OTObjectSet local_id="nav-history" />
+          </navigationHistory>
+        </OTNavigationHistoryService>
+        <OTLabbookBundle />
+      </bundles>
+      <overlays>
+        <object refid="6cc8e2b0-c44e-11dc-95ff-0800200c9a66" />
+        <object refid="b5d8b4a0-db35-11dc-95ff-0800200c9a66" />
+        <OTOverlay>
+          <deltaObjectMap>
+            <!-- chem-simulation -->
+            <entry key="b4032390-3ac0-11de-8a39-0800200c9a66!/section_1">
+              <OTSection unset="footer south">
+               <header>
+                <OTCompoundDoc showEditBar="false">
+                  <bodyText>
+                    <table width="100%" ><tr>
+                    <td><div class="title">Simulation Activity</div></td>
+                    <td width="50px"><object refid="${nav-bar}" /></td>
+                    </tr></table>
+                  </bodyText>
+                </OTCompoundDoc>
+                </header>
+               </OTSection>
+            </entry>
+
+                        <!-- chem-draw  -->
+            <entry key="2767fe20-6c7d-11dc-8314-0800200c9a66!/section_1">
+              <OTSection unset="footer south">
+               <header>
+                <OTCompoundDoc showEditBar="false">
+                  <bodyText>
+                    <table width="100%" ><tr>
+                    <td><div class="title">Chem Draw Activity</div></td>
+                    <td width="50px"><object refid="${nav-bar}" /></td>
+                    </tr></table>
+                  </bodyText>
+                </OTCompoundDoc>
+                </header>
+               </OTSection>
+            </entry>
+          </deltaObjectMap>
+        </OTOverlay>
+      </overlays>
+      <root>
+        <OTUDLContainer name="LOOPS">
+          <title>
+            <OTCompoundDoc local_id="title" showEditBar="false">
+              <bodyText>
+                <div style="margin-left:8px">
+                  <img src="http://loops.concord.org/images/loops-logo-compact.gif " 
+                       width="180" height="80" />
+                </div>
+                Exploring the<br/> 
+                Hydrogen Burn Model (D)                               
+              </bodyText>
+            </OTCompoundDoc>
+          </title>
+          <menu>
+            <OTViewChild useScrollPane="true" useHorizontalScrollPane="false" 
+                scrollPanelHasBorder="false">
+              <object>
+                <object refid="${menu}" />
+              </object>
+            </OTViewChild>
+          </menu>
+          <content>
+            <OTCardContainer local_id="section-card-container" loadViewOnlyOnDemand="true" closeViewOnExit="true">
+              <currentCard>
+                <object refid="b4032390-3ac0-11de-8a39-0800200c9a66!/section_1"/>
+              </currentCard>
+              <cards>
+                <object refid="b4032390-3ac0-11de-8a39-0800200c9a66!/section_1"/>
+                <object refid="2767fe20-6c7d-11dc-8314-0800200c9a66!/section_1"/>
+              </cards>
+            </OTCardContainer>
+          </content>
+        </OTUDLContainer>
+      </root>
+      <library>
+        <OTMenu local_id="menu">
+          <cardContainer>
+            <object refid="${section-card-container}" />
+          </cardContainer>
+          <menuRule>
+            <object refid="${section-rule}" />
+          </menuRule>
+        </OTMenu>
+        <OTMenuRule local_id="page-rule" jumpToViewedCard="true" stepAhead="true" />
+        <OTMenuRule local_id="section-rule" jumpToAnyCard="true" />
+        <!--  the slider itself -->
+        <OTNavBar local_id="nav-bar">
+          <menuView>
+            <object refid="dd5e6def-24e0-40e6-b079-fc2446d42434" />
+          </menuView>
+          <cssColor>
+            <object refid="31193bb0-c44f-11dc-95ff-0800200c9a66" />
+          </cssColor>
+        </OTNavBar>
+      </library>
+    </OTSystem>
+  </objects>
+</otrunk>
+
+
+
+
+[dev]$ curl -i http://webdav.diy.concord.org//seymour.concord.org/loops//25/1613-data.otml
+HTTP/1.1 200 OK
+Date: Tue, 20 Apr 2010 14:52:21 GMT
+Server: Apache/2.2.3 (Red Hat)
+Last-Modified: Tue, 20 Apr 2010 14:34:24 GMT
+ETag: "224096//seymour.concord.org/loops/25/1613-data.otml"
+Accept-Ranges: bytes
+Content-Length: 239
+Connection: close
+Content-Type: text/plain; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<otrunk id="d0bd1fe4-4c89-11df-a3fa-2d5147f43dd6">
+  <imports>
+    <import class="org.concord.otrunk.overlay.OTOverlay" />
+  </imports>
+  <objects>
+    <OTOverlay />
+  </objects>
+</otrunk>
+
+
+[dev]$ curl -i http://webdav.diy.concord.org//seymour.concord.org/loops//25/1613.otml
+HTTP/1.1 200 OK
+Date: Tue, 20 Apr 2010 14:51:39 GMT
+Server: Apache/2.2.3 (Red Hat)
+Last-Modified: Tue, 20 Apr 2010 14:34:22 GMT
+ETag: "224095//seymour.concord.org/loops/25/1613.otml"
+Accept-Ranges: bytes
+Content-Length: 165
+Connection: close
+Content-Type: text/plain; charset=UTF-8
+
+<otrunk id='cfbe1a50-4c89-11df-aae9-001ec94098a1'><imports><import class='org.concord.otrunk.overlay.OTOverlay' /></imports><objects><OTOverlay /></objects></otrunk>
+
+
+
+[dev]$ curl -i http://svn.concord.org/svn/projects/trunk/common/java/otrunk/otrunk-examples/LOOPS/global-imports/loops-view-bundle.otml
+HTTP/1.1 200 OK
+Date: Tue, 20 Apr 2010 14:55:06 GMT
+Server: Apache/2.2.3 (Red Hat)
+Last-Modified: Thu, 21 Jan 2010 15:30:49 GMT
+ETag: "21680//trunk/common/java/otrunk/otrunk-examples/LOOPS/global-imports/loops-view-bundle.otml"
+Accept-Ranges: bytes
+Content-Length: 46900
+Vary: Accept-Encoding
+Content-Type: text/plain; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<otrunk id="4f731e40-c257-11dc-95ff-0800200c9a66">
+  <imports>
+    <import class="org.concord.otrunk.OTSystem" />
+    <import class="org.concord.otrunk.OTInclude" />
+    <import class="org.concord.otrunk.view.OTViewBundle" />
+    <import class="org.concord.otrunk.view.OTViewMode" />
+    <import class="org.concord.otrunk.view.OTViewEntry" />
+    <import class="org.concord.otrunk.ui.swing.OTChoiceViewConfig" />
+    <import class="org.concord.otrunk.ui.question.OTQuestionViewConfig" />
+    <import class="org.concord.otrunk.view.document.OTCompoundDoc" />
+    <import class="org.concord.otrunk.script.ui.OTScriptButton" />
+    <import class="org.concord.otrunk.script.jruby.OTJRuby" />
+    <import class="org.concord.otrunk.script.js.OTJavascript" />
+    <import class="org.concord.otrunk.script.ui.OTScriptVariable" />
+    <import class="org.concord.otrunk.script.ui.OTScriptVariableComponent" />
+    <import class="org.concord.framework.otrunk.wrapper.OTBlob" />
+    <import class="org.concord.otrunk.ui.OTText" />
+    <import class="org.concord.otrunk.view.document.OTDocumentViewConfig" />
+    <import class="org.concord.otrunk.view.document.OTCssText" />
+    <import class="org.concord.otrunk.view.document.edit.OTDocumentEditViewConfig" />
+    <import class="org.concord.otrunk.ui.question.OTQuestion" />
+    <import class="org.concord.otrunk.ui.question.OTLeveledQuestions" />
+    <import class="org.concord.graph.util.state.OTDrawingTool2" />
+    <import class="org.concord.data.state.OTDataTable" />
+    <import class="org.concord.data.state.OTDataStore" />
+    <import class="org.concord.datagraph.state.OTDataCollector" />
+    <import class="org.concord.datagraph.state.OTDataGraphable" />
+    <import class="org.concord.datagraph.state.OTDataAxis" />
+    <import class="org.concord.otrunknl41.OTNLogoModel" />
+    <import class="org.concord.otrunk.ui.snapshot.OTSnapshotAlbum" />
+    <import class="org.concord.otrunk.ui.snapshot.OTSnapshotButton" />
+    <import class="org.concord.otrunk.ui.snapshot.OTSnapshotChooser" />
+    <import class="org.concord.otrunk.browser.mozswing.OTMozSwing" />
+    <import class="org.concord.otrunk.ui.OTSoundPlayer" />
+    <import class="org.concord.otrunkmw.OTModelerPage" />
+    <import class="org.concord.otrunk.ui.OTCardContainer" />
+    <import class="org.concord.otrunk.ui.menu.OTMenu" />
+    <import class="org.concord.otrunk.ui.menu.OTMenuRule" />
+    <import class="org.concord.smartgraph.OTSmartGraphTool" />
+    <import class="org.concord.otrunk.graph.OTDataCollectorViewConfig" />
+    <import class="org.concord.framework.otrunk.view.OTFrame" />
+    <import class="org.concord.otrunk.view.prototype.OTPrototypeViewEntry" />
+    <import class="org.concord.otrunk.ui.OTChoice" />
+    <import class="org.concord.otrunk.overlay.OTOverlay" />
+    <import class="org.concord.otrunk.view.prototype.OTPrototypeEventController" />
+    <import class="org.concord.otrunk.view.prototype.OTPrototypeMapEntry" />
+    <import class="org.concord.otrunk.overlay.OTOverlayWrapper" />
+    <import class="org.concord.otrunk.intrasession.OTMultiUserPollingGraph" />
+    <import class="org.concord.otrunk.intrasession.OTMultiUserPickN" />
+    <import class="org.concord.otrunk.ui.question.OTQuestionAnswer" />
+    <import class="org.concord.otrunk.util.OTLabbookBundle" />
+    <import class="org.concord.otrunk.util.OTLabbookEntry" />
+    <import class="org.concord.otrunk.labbook.OTLabbookButton" />
+    <import class="org.concord.otrunk.labbook.OTLabbook" />
+    <import class="org.concord.otrunk.labbook.OTLabbookEntryChooser" />
+    <!-- <import class="org.concord.multimedia.state.OTSoundDataCollector" /> -->
+  </imports>
+  <idMap>
+        <idMapping local_id="css-font" id="23cc14f0-c44f-11dc-95ff-0800200c9a66"/>
+        <idMapping local_id="css-color" id="31193bb0-c44f-11dc-95ff-0800200c9a66"/>
+        <idMapping local_id="css-layout" id="3cefc800-c44f-11dc-95ff-0800200c9a66"/>
+        <idMapping local_id="imported-view-bundle" id="8d880970-c22a-11dc-95ff-0800200c9a66"/>
+        <idMapping local_id="overlays-pulldown-menus" id="234e6400-c450-11dc-95ff-0800200c9a66"/>
+        <idMapping local_id="menu-vertical" id="1b0cb6e0-c453-11dc-95ff-0800200c9a66"/>
+        <idMapping local_id="menu-horizontal-circle" id="d937d590-14fd-11de-8c30-0800200c9a66"/>
+        <!--<idMapping local_id="menu-horizontal-book" id="416eeab0-c453-11dc-95ff-0800200c9a66"/>-->
+        <idMapping local_id="menu-horizontal-compass" id="29dc5ef0-c453-11dc-95ff-0800200c9a66"/>
+        <idMapping local_id="css-color-34-overlay" id="bfc60e90-db35-11dc-95ff-0800200c9a66"/>
+        <idMapping local_id="css-color-56-overlay" id="b5d8b4a0-db35-11dc-95ff-0800200c9a66"/>
+        <idMapping local_id="text-edit" id="be713960-e18a-11dc-95ff-0800200c9a66"/>
+        <idMapping local_id="text-label" id="c93a7460-e18a-11dc-95ff-0800200c9a66"/>
+        <idMapping local_id="choice-combo-view" id="453a61b0-e18b-11dc-95ff-0800200c9a66"/>
+        <idMapping local_id="compound_doc_view" id="0d03b9c0-e48a-11dc-95ff-0800200c9a66"/>
+        <idMapping local_id="questions-card-view" id="c0e33320-e611-11dc-95ff-0800200c9a66"/>
+  </idMap>
+  <objects>
+    <OTSystem id="be0c1cc0-c37f-11dc-95ff-0800200c9a66">
+      <includes>
+        <OTInclude href="predefined-sensor-graphs.otml" />
+      </includes>
+      <bundles>
+        <OTViewBundle showLeftPanel="false" currentMode="student" id="8d880970-c22a-11dc-95ff-0800200c9a66">
+          <modes>
+            <OTViewMode name="student">
+              <map />
+            </OTViewMode>
+            <OTViewMode name="reporting">
+              <map>
+                <entry key="${menu-vertical}">
+                  <OTViewEntry objectClass="org.concord.otrunk.ui.menu.OTMenu" viewClass="org.concord.otrunk.ui.menu.OTMenuSectionReportView" />
+                </entry>
+                <entry key="${labbook-entry-chooser-view}">
+                          <OTViewEntry objectClass="org.concord.otrunk.labbook.OTLabbookEntryChooser" viewClass="org.concord.otrunk.labbook.ui.OTLabbookEntryChooserTeacherView" />
+                    </entry>
+              </map>
+            </OTViewMode>
+            <OTViewMode name="teacher">
+                <map>
+              <!--
+                        <entry key="${lab-page-view}">
+                                <OTViewEntry objectClass="org.concord.otrunk.udl.OTUDLLabPage" viewClass="org.concord.otrunk.udl.ui.OTUDLLabPageTeacherView"/>
+                      </entry>
+                        <entry key="${teacher-note-view}">
+                                <OTViewEntry objectClass="org.concord.otrunk.udl.OTTeacherNote" viewClass="org.concord.otrunk.udl.OTTeacherNoteTeacherView" />
+                        </entry>
+                -->
+                        <entry key="${menu-vertical}">
+                          <OTViewEntry objectClass="org.concord.otrunk.ui.menu.OTMenu" viewClass="org.concord.otrunk.ui.menu.OTMenuSectionReportView" />
+                        </entry>
+                        <entry key="${question-view}">
+                          <OTViewEntry objectClass="org.concord.otrunk.ui.question.OTQuestion" viewClass="org.concord.otrunk.ui.question.OTQuestionTeacherView" />
+                        </entry>
+                  <entry key="b7541497-d286-4a23-900b-35c5e0edfde9">
+                     <OTViewEntry objectClass="org.concord.otrunk.intrasession.OTMultiUserPickN" viewClass="org.concord.otrunk.intrasession.ui.OTMultiUserConcatTeacherView" />
+                   </entry>
+                   <entry key="12b9b413-8aee-4fc7-b1a7-fe272f17509e">
+                     <OTViewEntry objectClass="org.concord.otrunk.intrasession.OTMultiUserPollingGraph" viewClass="org.concord.otrunk.intrasession.ui.OTMultiUserPollingGraphTeacherView" />
+                   </entry>
+                   <entry key="${labbook-entry-chooser-view}">
+                         <OTViewEntry objectClass="org.concord.otrunk.labbook.OTLabbookEntryChooser" viewClass="org.concord.otrunk.labbook.ui.OTLabbookEntryChooserTeacherView" />
+                   </entry>
+                </map>
+            </OTViewMode>
+            <OTViewMode name="authoring">
+              <map>
+                <entry key="${slider-view}">
+                        <OTViewEntry objectClass="org.concord.otrunk.ui.OTSlider" viewClass="org.concord.otrunk.ui.swing.OTSliderEditView" />
+                </entry>
+                <entry key="${labbook-button-view}">
+                        <OTViewEntry objectClass="org.concord.otrunk.labbook.OTLabbookButton" viewClass="org.concord.otrunk.labbook.ui.OTLabbookButtonEditView" />
+                </entry>
+                <entry key="${labbook-entry-chooser-view}">
+                        <OTViewEntry objectClass="org.concord.otrunk.labbook.OTLabbookEntryChooser" viewClass="org.concord.otrunk.labbook.ui.OTLabbookEntryChooserEditView" />
+                </entry>
+                <!--
+                <entry key="${lab-page-view}">
+                  <OTViewEntry objectClass="org.concord.otrunk.udl.OTUDLLabPage" viewClass="org.concord.otrunk.udl.ui.OTUDLLabPageEditView"/>
+                </entry>
+                -->
+                <entry key="${curriculum-unit-view}">
+                        <OTViewEntry objectClass="org.concord.otrunk.ui.OTCurriculumUnit" viewClass="org.concord.otrunk.ui.swing.OTCurriculumUnitEditView"/>
+                </entry>
+                <entry key="${mode-switcher-view}">
+                        <OTViewEntry objectClass="org.concord.otrunk.ui.OTModeSwitcher" viewClass="org.concord.otrunk.ui.swing.OTModeSwitcherView" />
+                </entry>
+                <entry key="${smart-graph-question-view}">
+                                        <OTViewEntry objectClass="org.concord.smartgraph.OTSmartGraphQuestion" viewClass="org.concord.smartgraph.OTSmartGraphQuestionEditView" />
+                                </entry>
+                <entry key="${sound-grapher-view}">
+                        <OTViewEntry viewClass="org.concord.multimedia.state.ui.OTSoundDataCollectorEditView" objectClass="org.concord.multimedia.state.OTSoundDataCollector" />
+                </entry>
+                <entry key="${moz-swing-view}">
+                  <OTViewEntry objectClass="org.concord.otrunk.browser.mozswing.OTMozSwing" viewClass="org.concord.otrunk.browser.mozswing.OTMozSwingEditView" />
+                </entry>
+                <entry key="${snapshot_button_view}">
+                  <OTViewEntry objectClass="org.concord.otrunk.ui.snapshot.OTSnapshotButton" viewClass="org.concord.otrunk.ui.snapshot.OTSnapshotButtonEditView" />
+                </entry>
+                <entry key="${snapshot-chooser-view}">
+                  <OTViewEntry objectClass="org.concord.otrunk.ui.snapshot.OTSnapshotChooser" viewClass="org.concord.otrunk.ui.snapshot.OTSnapshotChooserEditView" />
+                </entry>
+                <entry key="${container_view}">
+                  <OTViewEntry objectClass="org.concord.otrunk.ui.OTUDLContainer" viewClass="org.concord.otrunk.ui.OTUDLContainerEditView" />
+                </entry>
+                <entry key="${choice-radio-view}">
+                  <OTChoiceViewConfig objectClass="org.concord.otrunk.ui.OTChoice" viewClass="org.concord.otrunk.ui.swing.OTChoiceComboBoxEditView" useViewsAsChoices="true" />
+                </entry>
+                <entry key="${choice-checkbox-view}">
+                  <OTChoiceViewConfig objectClass="org.concord.otrunk.ui.OTChoiceMultiple" viewClass="org.concord.otrunk.ui.swing.OTChoiceComboBoxEditView" useViewsAsChoices="true" />
+                </entry>
+                <entry key="${menu-horizontal-circle}">
+                  <OTViewEntry objectClass="org.concord.otrunk.ui.menu.OTMenu" viewClass="org.concord.otrunk.ui.menu.OTMenuPageEditView" />
+                </entry>
+                <!--<entry key="${menu-horizontal-book}">
+                  <OTViewEntry objectClass="org.concord.otrunk.ui.menu.OTMenu" viewClass="org.concord.otrunk.ui.menu.OTMenuPageEditView" />
+                </entry>
+                --><entry key="${menu-horizontal-compass}">
+                  <OTViewEntry objectClass="org.concord.otrunk.ui.menu.OTMenu" viewClass="org.concord.otrunk.ui.menu.OTMenuPageEditView" />
+                </entry>
+                <entry key="${question-view}">
+                  <OTQuestionViewConfig objectClass="org.concord.otrunk.ui.question.OTQuestion" viewClass="org.concord.otrunk.ui.question.OTQuestionEditView" nameFieldVisible="true">
+                        <additionalInputTypes>
+                      <OTLabbookEntryChooser name="Snapshot" />
+                      <!-- 
+                      <OTCompoundDoc name="Smart graph label" showEditBar="false">
+                        <bodyText>
+                          <table>
+                            <tr>
+                              <td width="100px">
+                                <object refid="${smart-script-button}"/>
+                              </td>
+                              <td width="100px">
+                                <object refid="${smart-script-button-setup}" viewid="${script-button-for-authors}"/>
+                              </td>
+                            </tr>
+                          </table>
+                        </bodyText>
+                        <documentRefs>
+                          <OTText />
+                          <OTScriptButton local_id="smart-script-button" text="Check answer">
+                            <script>
+                              <OTJRuby src="../scripts/smart_graph_label_script_template.rb">
+                                <script />
+                              </OTJRuby>
+                            </script>
+                          </OTScriptButton>
+                          <OTScriptButton local_id="smart-script-button-setup" text="Setup">
+                            <script>
+                              <OTJavascript src="../scripts/set-up-smartgraph-button-script.js"/>
+                            </script>
+                            <scriptVariables>
+                              <OTScriptVariable name="script_button" reference="${smart-script-button}"/>
+                              <OTScriptVariableComponent name="script_button_component" reference="${smart-script-button}"/>
+                              <OTScriptVariable name="smart_graph_range_response">
+                                <reference>
+                                  <OTBlob src="../scripts/smart_graph_range_response.rb" />
+                                </reference>
+                              </OTScriptVariable>
+                              <OTScriptVariable name="otrunk_ruby_script_tools">
+                                <reference>
+                                  <OTBlob src="../scripts/otrunk_ruby_script_tools.rb" />
+                                </reference>
+                              </OTScriptVariable>
+                            </scriptVariables>
+                          </OTScriptButton>
+                        </documentRefs>
+                      </OTCompoundDoc>
+                      <OTCompoundDoc name="Smart graph number" showEditBar="false">
+                        <bodyText>
+                          <object refid="${smart-text-input}"/><br/>
+                          <table>
+                            <tr>
+                              <td width="100px">
+                                <object refid="${smart-script-button-text}"/>
+                              </td>
+                              <td width="100px">
+                                <object refid="${smart-script-button-setup-text}" viewid="${script-button-for-authors}"/>
+                              </td>
+                            </tr>
+                          </table>
+                        </bodyText>
+                        <documentRefs>
+                          <OTText local_id="smart-text-input"/>
+                          <OTScriptButton local_id="smart-script-button-text" text="Check answer">
+                            <script>
+                              <OTJRuby src="../scripts/smart_graph_number_script_template.rb">
+                                <script />
+                              </OTJRuby>
+                            </script>
+                          </OTScriptButton>
+                          <OTScriptButton local_id="smart-script-button-setup-text" text="Setup">
+                            <script>
+                              <OTJavascript src="../scripts/set-up-smartgraph-button-script.js"/>
+                            </script>
+                            <scriptVariables>
+                              <OTScriptVariable name="text_field" reference="${smart-text-input}"/>
+                              <OTScriptVariable name="script_button" reference="${smart-script-button-text}"/>
+                              <OTScriptVariableComponent name="script_button_component" reference="${smart-script-button-text}"/>
+                              <OTScriptVariable name="smart_graph_range_response">
+                                <reference>
+                                  <OTBlob src="../scripts/smart_graph_range_response.rb" />
+                                </reference>
+                              </OTScriptVariable>
+                              <OTScriptVariable name="otrunk_ruby_script_tools">
+                                <reference>
+                                  <OTBlob src="../scripts/otrunk_ruby_script_tools.rb" />
+                                </reference>
+                              </OTScriptVariable>
+                            </scriptVariables>
+                          </OTScriptButton>
+                        </documentRefs>
+                      </OTCompoundDoc>
+                      -->
+                    </additionalInputTypes>
+                  </OTQuestionViewConfig>
+                </entry>
+                <entry key="${menu-vertical}">
+                  <OTViewEntry objectClass="org.concord.otrunk.ui.menu.OTMenu" viewClass="org.concord.otrunk.ui.menu.OTMenuSectionEditView" />
+                </entry>
+                <entry key="${data-table-view}">
+                  <OTViewEntry objectClass="org.concord.data.state.OTDataTable" viewClass="org.concord.otrunk.ui.swing.OTDataTableEditView" />
+                </entry>
+                <!--
+                <entry key="${character-group-view}">
+                  <OTViewEntry objectClass="org.concord.otrunk.udl.coach.OTUDLCoachGroup" viewClass="org.concord.otrunk.udl.coach.OTUDLCoachGroupEditView" />
+                </entry>
+                -->
+                <entry key="${netlogo-view}">
+                  <OTViewEntry viewClass="org.concord.otrunknl41.OTNLogoModelEditView" objectClass="org.concord.otrunknl41.OTNLogoModel" />
+                </entry>
+                <entry key="${compound_doc_view}">
+                  <OTDocumentEditViewConfig objectClass="org.concord.otrunk.view.document.OTCompoundDoc" viewClass="org.concord.otrunk.view.document.edit.OTDocumentEditView">
+                    <documentViewConfig>
+                      <object refid="${compound_doc_view}" />
+                    </documentViewConfig>
+                    <objectsToInsert>
+                      <OTQuestion name="Question" />
+                      <OTLeveledQuestions name="Leveled questions"/>
+                      <OTQuestionAnswer name="Student Answer" />
+                      <OTText name="Text field" />
+                      <OTOverlayWrapper name="Intrasession Saving" />
+                      <OTMultiUserPickN name="Pick N Results View" />
+                      <OTMultiUserPollingGraph name="Histogram Results View" />
+                      <OTDrawingTool2 name="Draw tool" />
+                      <OTDataTable name="Data table" showLastRowForAddingNew="true">
+                        <dataStore>
+                          <OTDataStore numberChannels="2" />
+                        </dataStore>
+                      </OTDataTable>
+                      <OTDataCollector name="Data graph" title="Data graph">
+                        <source>
+                          <OTDataGraphable name="Data Graph" connectPoints="true" controllable="true" yColumn="1" drawMarks="false" color="16711680" xColumn="0" lineWidth="2.0">
+                            <dataStore>
+                              <OTDataStore />
+                            </dataStore>
+                          </OTDataGraphable>
+                        </source>
+                        <xDataAxis>
+                          <OTDataAxis max="60.0" units="s" min="0.0" label="Time" />
+                        </xDataAxis>
+                        <yDataAxis>
+                          <OTDataAxis max="40.0" units="" min="0.0" label="" />
+                        </yDataAxis>
+                      </OTDataCollector>
+                      <OTNLogoModel name="NetLogo model" />
+                      <OTLabbook name="Snapshot album" />
+                      <OTLabbookButton name="Snapshot button" />
+                      <OTLabbookEntryChooser name="Snapshot chooser" />
+                      <OTMozSwing name="Web browser" />
+                      <!--<OTAuthorNote name="Author's note">
+                        <note>
+                          <OTText />
+                        </note>
+                      </OTAuthorNote>
+                      <OTTeacherNote name="Teacher note">
+                        <note>
+                          <OTCompoundDoc showEditBar="false" bodyText="" />
+                        </note>
+                      </OTTeacherNote>-->
+                      <OTSoundPlayer name="Sound player"/>
+                      <OTSoundDataCollector name="Sound grapher" title="Data graph">
+                        <source>
+                          <OTDataGraphable drawMarks="false" color="255" connectPoints="true" xColumn="0" yColumn="1" name="vf" lineWidth="2.0">
+                                      <dataProducer>
+                                        <OTSoundDataProducer isFFT="false"/>
+                                      </dataProducer>
+                                      <dataStore>
+                                        <OTDataStore />
+                                      </dataStore>
+                                    </OTDataGraphable>
+                        </source>
+                        <xDataAxis>
+                          <OTDataAxis max="0.06" units="ms" min="0.0" label="Time" />
+                        </xDataAxis>
+                        <yDataAxis>
+                          <OTDataAxis max="150" units="" min="-150" label="" />
+                        </yDataAxis>
+                      </OTSoundDataCollector>
+                      <OTModelerPage name="Molecular workbench" authoredDataURL="http://mw2.concord.org/public/student/classic/motion/undershotwaterwheel.cml"/>
+                      <OTCompoundDoc name="Inner pages" showEditBar="false">
+                        <bodyText>
+                                <div style="border-width:1px; border-color:black; border-style:solid; margin: 5px; padding:2px;">
+                                                   <object refid="${inner_page_cards}" /><br/>
+                                                   <object refid="${inner_page_menu}" viewId="${menu-horizontal-circle}" />
+                                </div>
+                        </bodyText>
+                        <documentRefs>
+                                <OTCardContainer local_id="inner_page_cards" contentsMayScroll="false" loadViewOnlyOnDemand="true" closeViewOnExit="true">
+                                        <cards>
+                                                <OTCompoundDoc bodyText=""/>
+                                        </cards>
+                                </OTCardContainer>
+                                <OTMenu local_id="inner_page_menu" showBorder="false" cardContainer="${inner_page_cards}">
+                                        <menuRule>
+                                                                <OTMenuRule local_id="page-rule" jumpToViewedCard="true" stepAhead="true"/>
+                                                                </menuRule>
+                                </OTMenu>
+                        </documentRefs>
+                      </OTCompoundDoc>
+                      <OTScriptButton name="Script button">
+                        <script>
+                                <OTJavascript>
+                                        <script>
+                                                function clicked(){
+                      
+                                                }
+                                        </script>
+                                </OTJavascript>
+                        </script>
+                      </OTScriptButton>
+                      <OTSmartGraphTool name="Smart graph tool"/>
+                    </objectsToInsert>
+                  </OTDocumentEditViewConfig>
+                </entry>
+                <entry key="${questions-card-view}">
+                  <OTQuestionViewConfig objectClass="org.concord.otrunk.ui.question.OTLeveledQuestions" viewClass="org.concord.otrunk.ui.question.OTLeveledQuestionsEditView" />
+                </entry>
+                <!--<entry key="${questions-on-off-view}">
+                  <OTQuestionViewConfig objectClass="org.concord.otrunk.ui.question.OTLeveledQuestions" viewClass="org.concord.otrunk.ui.question.OTLeveledQuestionsEditView" />
+                </entry>
+                --><entry key="${cck-view}">
+                  <OTViewEntry objectClass="org.concord.otrunkcck.OTCCKModel" viewClass="org.concord.otrunkcck.OTCCKModelEditView" />
+                </entry>
+                <entry key="${data-collector-view}">
+                  <OTDataCollectorViewConfig viewClass="org.concord.otrunk.graph.OTDataCollectorEditView" objectClass="org.concord.datagraph.state.OTDataCollector">
+                    <predefinedGraphs>
+                      <object refid="088786c2-8719-11dc-8314-0800200c9a66" />
+                    </predefinedGraphs>
+                  </OTDataCollectorViewConfig>
+                </entry>
+                <entry key="${drawing-view}">
+                  <OTViewEntry viewClass="org.concord.otrunk.graph.OTDataDrawingToolEditView" objectClass="org.concord.graph.util.state.OTDrawingTool" />
+                </entry>
+                <!--
+                <entry key="${teacher-note-view}">
+                  <OTViewEntry objectClass="org.concord.otrunk.udl.OTTeacherNote" viewClass="org.concord.otrunk.udl.OTTeacherNoteEditView" />
+                </entry>
+                <entry key="${author-note-view}">
+                  <OTViewEntry objectClass="org.concord.otrunk.udl.OTAuthorNote" viewClass="org.concord.otrunk.udl.OTAuthorNoteEditView" />
+                </entry>
+                -->
+                <entry key="${text-edit}">
+                        <OTViewEntry objectClass="org.concord.otrunk.ui.OTText" viewClass="org.concord.otrunk.ui.swing.OTTextEditEditView" />
+                </entry>
+                <entry key="${sound-player-view}">
+                        <OTViewEntry objectClass="org.concord.otrunk.ui.OTSoundPlayer" viewClass="org.concord.otrunk.ui.swing.OTSoundPlayerEditView"/>
+                </entry>
+                <entry key="${mw-view}">
+                        <OTViewEntry objectClass="org.concord.otrunkmw.OTModelerPage" viewClass="org.concord.otrunkmw.OTModelerPageEditView" />
+                </entry>
+                <entry key="${script-button-view}">
+                        <OTViewEntry objectClass="org.concord.otrunk.script.ui.OTScriptButton" viewClass="org.concord.otrunk.script.ui.OTScriptButtonEditView"/>
+                </entry>
+                <entry key="${script-button-for-authors}">
+                        <OTViewEntry objectClass="org.concord.otrunk.script.ui.OTScriptButton" viewClass="org.concord.otrunk.script.ui.OTScriptButtonView"/>
+                </entry>
+                <!--<entry key="${smart-graph-script-view}">
+                        <OTViewEntry objectClass="org.concord.otrunk.udl.util.OTSmartGraphScriptButton" viewClass="org.concord.otrunk.udl.util.OTSmartGraphScriptButtonEditView"/>
+                </entry>
+                --><entry key="${smart-graph-view}">
+                        <OTViewEntry objectClass="org.concord.smartgraph.OTSmartGraphTool" viewClass="org.concord.smartgraph.OTSmartGraphToolEditView" />
+                </entry>
+                <entry key="b7541497-d286-4a23-900b-35c5e0edfde9">
+                   <OTViewEntry objectClass="org.concord.otrunk.intrasession.OTMultiUserPickN" viewClass="org.concord.otrunk.intrasession.ui.OTMultiUserConcatAuthorView" />
+                 </entry>
+                 <entry key="12b9b413-8aee-4fc7-b1a7-fe272f17509e">
+                   <OTViewEntry objectClass="org.concord.otrunk.intrasession.OTMultiUserPollingGraph" viewClass="org.concord.otrunk.intrasession.ui.OTMultiUserPollingGraphAuthorView" />
+                 </entry>
+                 <entry key="${overlay-wrapper-view}">
+                   <OTViewEntry objectClass="org.concord.otrunk.overlay.OTOverlayWrapper" viewClass="org.concord.otrunk.overlay.OTOverlayWrapperAuthorView" />
+                 </entry>
+                 <entry key="${question-answer-view}">
+                    <OTViewEntry objectClass="org.concord.otrunk.ui.question.OTQuestionAnswer" viewClass="org.concord.otrunk.ui.question.OTQuestionAnswerEditView" />
+                 </entry>
+              </map>
+            </OTViewMode>
+          </modes>
+          <frame>
+            <OTFrame useScrollPane="false" width="850" height="600" />
+          </frame>
+          <views>
+                <OTViewEntry
+              objectClass="org.concord.otrunk.OTIncludeRootObject"
+              viewClass="org.concord.otrunk.OTIncludeRootObjectView" />
+            <!-- The OTQuestionViewConfig can be used to set the default scaffolding level, and whether the student can navigate through the levels.
+                                                  The default scaffolding level just uses the order of the items inside OTUDLLeveledQuestions/questions. It is not aware of the names
+                                                  such as "L1", "L2", etc. -->
+            <OTQuestionViewConfig id="c0e33320-e611-11dc-95ff-0800200c9a66" isLevelFrozen="false" defaultScaffoldLevel="0" objectClass="org.concord.otrunk.ui.question.OTLeveledQuestions" viewClass="org.concord.otrunk.ui.question.OTLeveledQuestionsCardView" />
+            <OTViewEntry objectClass="org.concord.otrunk.labbook.OTLabbook" viewClass="org.concord.otrunk.labbook.ui.OTLabbookView" />
+            <OTViewEntry local_id="slider-view" objectClass="org.concord.otrunk.ui.OTSlider" 
+              viewClass="org.concord.otrunk.ui.swing.OTSliderView" />            
+            <OTViewEntry local_id="labbook-button-view" objectClass="org.concord.otrunk.labbook.OTLabbookButton" viewClass="org.concord.otrunk.labbook.ui.OTLabbookButtonView" />
+            <OTViewEntry local_id="labbook-entry-chooser-view" objectClass="org.concord.otrunk.labbook.OTLabbookEntryChooser" viewClass="org.concord.otrunk.labbook.ui.OTLabbookEntryChooserView" />
+            <OTViewEntry local_id="container_view" objectClass="org.concord.otrunk.ui.OTUDLContainer" viewClass="org.concord.otrunk.ui.OTUDLContainerView" />
+            <OTViewEntry objectClass="org.concord.framework.otrunk.wrapper.OTBlob" viewClass="org.concord.otrunk.ui.swing.OTBlobImageView"/>
+            <OTViewEntry local_id="curriculum-unit-view" objectClass="org.concord.otrunk.ui.OTCurriculumUnit" viewClass="org.concord.otrunk.ui.swing.OTCurriculumUnitView"/>
+            <!--<OTViewEntry local_id="smart-graph-script-view" objectClass="org.concord.otrunk.udl.util.OTSmartGraphScriptButton" viewClass="org.concord.otrunk.script.ui.OTScriptButtonView"/>-->
+            <OTViewEntry objectClass="org.concord.otrunk.ui.OTObjectSet" viewClass="org.concord.otrunk.ui.swing.OTObjectSetView"/>
+            <OTViewEntry local_id="script-button-view" objectClass="org.concord.otrunk.script.ui.OTScriptButton" viewClass="org.concord.otrunk.script.ui.OTScriptButtonView"/>
+            <OTViewEntry local_id="script-button-for-authors" objectClass="org.concord.otrunk.script.ui.OTScriptButton" viewClass="org.concord.otrunk.ui.swing.OTNullView"/>
+            <!--<OTViewEntry objectClass="org.concord.otrunk.udl.document.OTGlossary" viewClass="org.concord.otrunk.udl.document.OTGlossaryView"/>-->
+            <!--<OTViewEntry objectClass="org.concord.otrunk.udl.document.OTDefinition" viewClass="org.concord.otrunk.udl.document.OTDefinitionView"/>-->
+            <OTViewEntry objectClass="org.concord.otrunk.ui.OTLayerContainer" viewClass="org.concord.otrunk.ui.swing.OTLayerContainerView"/>
+            <OTViewEntry local_id="smart-graph-question-view" objectClass="org.concord.smartgraph.OTSmartGraphQuestion" viewClass="org.concord.smartgraph.OTSmartGraphQuestionView" />
+                        <OTViewEntry local_id="smart-graph-view" objectClass="org.concord.smartgraph.OTSmartGraphTool" viewClass="org.concord.smartgraph.OTSmartGraphToolHiddenView" />
+            <OTViewEntry objectClass="org.concord.otrunk.ui.menu.OTNavBar" viewClass="org.concord.otrunk.ui.menu.OTNavBarView"/>
+            <!--<OTViewEntry local_id="lab-page-view" objectClass="org.concord.otrunk.udl.OTUDLLabPage" viewClass="org.concord.otrunk.udl.ui.OTUDLLabPageView"/>-->
+            <OTViewEntry local_id="sound-grapher-view" viewClass="org.concord.multimedia.state.ui.OTSoundDataCollectorView" objectClass="org.concord.multimedia.state.OTSoundDataCollector" />
+            <OTViewEntry local_id="mw-view" objectClass="org.concord.otrunkmw.OTModelerPage" viewClass="org.concord.otrunkmw.OTModelerPageView" />
+            <OTViewEntry objectClass="org.concord.otrunk.OTIncludeRootObject" viewClass="org.concord.otrunk.OTIncludeRootObjectView" />
+            <!--<OTViewEntry objectClass="org.concord.otrunk.udl.OTZoom" viewClass="org.concord.otrunk.udl.OTZoomView" />-->
+            <!--<OTViewEntry objectClass="org.concord.otrunk.udl.OTUDLVersionContainer" viewClass="org.concord.otrunk.udl.OTUDLVersionContainerView" />-->
+            <!--<OTViewEntry local_id="teacher-note-view" objectClass="org.concord.otrunk.udl.OTTeacherNote" viewClass="org.concord.otrunk.ui.swing.OTNullView" />-->
+            <!--<OTViewEntry local_id="author-note-view" objectClass="org.concord.otrunk.udl.OTAuthorNote" viewClass="org.concord.otrunk.ui.swing.OTNullView" />-->
+            <OTViewEntry local_id="moz-swing-view" objectClass="org.concord.otrunk.browser.mozswing.OTMozSwing" viewClass="org.concord.otrunk.browser.mozswing.OTMozSwingView" />
+            <OTViewEntry local_id="mode-switcher-view" objectClass="org.concord.otrunk.ui.OTModeSwitcher" viewClass="org.concord.otrunk.ui.swing.OTModeSwitcherBypassView" />
+            <OTViewEntry objectClass="org.concord.otrunk.ui.OTImage" viewClass="org.concord.otrunk.ui.swing.OTImageView" />
+            <!--<OTQuestionViewConfig local_id="questions-on-off-view" isLevelFrozen="false" defaultScaffoldLevel="1" objectClass="org.concord.otrunk.ui.question.OTLeveledQuestions" viewClass="org.concord.otrunk.ui.question.OTLeveledQuestionsOnOffView" />-->
+            <OTViewEntry local_id="snapshot_button_view" objectClass="org.concord.otrunk.ui.snapshot.OTSnapshotButton" viewClass="org.concord.otrunk.ui.snapshot.OTSnapshotButtonView" />
+            <OTViewEntry local_id="snapshot-chooser-view" objectClass="org.concord.otrunk.ui.snapshot.OTSnapshotChooser" viewClass="org.concord.otrunk.ui.snapshot.OTSnapshotChooserView" />
+            <OTViewEntry objectClass="org.concord.otrunk.ui.snapshot.OTSnapshotAlbum" viewClass="org.concord.otrunk.ui.snapshot.OTSnapshotAlbumView" />
+            <!--<OTViewEntry objectClass="org.concord.otrunk.udl.friction.OTFrictionModel" viewClass="org.concord.otrunk.udl.friction.OTFrictionModelView" />-->
+            <OTViewEntry objectClass="org.concord.otrunk.ui.OTButton" viewClass="org.concord.otrunk.ui.swing.OTButtonView" />
+            <OTViewEntry local_id="script-view" objectClass="org.concord.otrunk.script.ui.OTScriptObject" viewClass="org.concord.otrunk.script.ui.OTScriptObjectView" />
+            <OTViewEntry objectClass="org.concord.otrunk.ui.OTButton" viewClass="org.concord.otrunk.ui.swing.OTButtonView" />
+            <OTViewEntry local_id="question-view" objectClass="org.concord.otrunk.ui.question.OTQuestion" viewClass="org.concord.otrunk.ui.question.OTQuestionView" />
+            <!--<OTViewEntry local_id="character-group-view" objectClass="org.concord.otrunk.udl.coach.OTUDLCoachGroup" viewClass="org.concord.otrunk.udl.coach.OTUDLCoachGroupView" />-->
+            <OTViewEntry objectClass="org.concord.otrunk.ui.OTSection" viewClass="org.concord.otrunk.ui.swing.OTSectionView" />
+            <OTViewEntry id="1b0cb6e0-c453-11dc-95ff-0800200c9a66" objectClass="org.concord.otrunk.ui.menu.OTMenu" viewClass="org.concord.otrunk.ui.menu.OTMenuSectionView" />
+            <OTViewEntry id="29dc5ef0-c453-11dc-95ff-0800200c9a66" objectClass="org.concord.otrunk.ui.menu.OTMenu" viewClass="org.concord.otrunk.ui.menu.OTMenuPageExpandView" />
+            <OTViewEntry id="dd5e6def-24e0-40e6-b079-fc2446d42434" objectClass="org.concord.otrunk.ui.menu.OTMenu" viewClass="org.concord.otrunk.ui.menu.OTMenuPageBrowserView" />
+            <OTViewEntry id="e97e4f38-83ac-41d5-b05a-0418466d98b1" objectClass="org.concord.otrunk.ui.menu.OTMenu" viewClass="org.concord.otrunk.ui.menu.OTMenuPageBrowserLabelView" />
+            <OTViewEntry id="b68bbfdf-0680-4a70-b86d-cd6045b06816" objectClass="org.concord.otrunk.ui.menu.OTMenu" viewClass="org.concord.otrunk.ui.menu.OTMenuPageBrowserLabelFullView" />
+            <OTViewEntry id="d937d590-14fd-11de-8c30-0800200c9a66" objectClass="org.concord.otrunk.ui.menu.OTMenu" viewClass="org.concord.otrunk.ui.menu.OTMenuPageView" />
+            <!--<OTViewEntry id="416eeab0-c453-11dc-95ff-0800200c9a66" objectClass="org.concord.otrunk.ui.menu.OTMenu" viewClass="org.concord.otrunk.ui.menu.OTMenuPageBookView" />-->
+            <OTChoiceViewConfig local_id="choice-checkbox-view" objectClass="org.concord.otrunk.ui.OTChoiceMultiple" viewClass="org.concord.otrunk.ui.swing.OTChoiceCheckBoxView" useViewsAsChoices="true" />
+            <OTChoiceViewConfig local_id="choice-radio-view" objectClass="org.concord.otrunk.ui.OTChoice" viewClass="org.concord.otrunk.ui.swing.OTChoiceRadioButtonView" useViewsAsChoices="true" />
+            <OTViewEntry id="453a61b0-e18b-11dc-95ff-0800200c9a66" objectClass="org.concord.otrunk.ui.OTChoice" viewClass="org.concord.otrunk.ui.swing.OTChoiceComboBoxView" />
+            <OTViewEntry objectClass="org.concord.otrunk.script.ui.OTScriptObject" viewClass="org.concord.otrunk.script.ui.OTScriptObjectView" />
+            <OTViewEntry objectClass="org.concord.otrunk.ui.OTCardContainer" viewClass="org.concord.otrunk.ui.swing.OTCardContainerView" />
+            <OTViewEntry objectClass="org.concord.otrunk.ui.OTTabContainer" viewClass="org.concord.otrunk.ui.swing.OTTabContainerView" />
+            <OTViewEntry objectClass="org.concord.otrunk.ui.OTBorderContainer" viewClass="org.concord.otrunk.ui.swing.OTBorderContainerView" />
+            <OTViewEntry objectClass="org.concord.otrunk.ui.OTPlacementContainer" viewClass="org.concord.otrunk.ui.swing.OTPlacementContainerView" />
+            <OTViewEntry id="be713960-e18a-11dc-95ff-0800200c9a66" objectClass="org.concord.otrunk.ui.OTText" viewClass="org.concord.otrunk.ui.swing.OTTextEditView" />
+            <OTViewEntry id="b283beb0-cf35-4f68-bce3-d3420e1f2219" objectClass="org.concord.otrunk.ui.OTText" viewClass="org.concord.otrunk.ui.multiuser.OTTextMultiUserView" />
+            <OTViewEntry id="c93a7460-e18a-11dc-95ff-0800200c9a66" objectClass="org.concord.otrunk.ui.OTText" viewClass="org.concord.otrunk.ui.swing.OTTextView" />
+            <OTViewEntry local_id="data-collector-view" viewClass="org.concord.datagraph.state.OTDataCollectorView" objectClass="org.concord.datagraph.state.OTDataCollector" />
+            <OTViewEntry viewClass="org.concord.datagraph.state.OTDataGraphView" objectClass="org.concord.datagraph.state.OTDataGraph" />
+            <OTViewEntry viewClass="org.concord.data.state.OTDataFieldView" objectClass="org.concord.data.state.OTDataField" />
+            <OTViewEntry local_id="drawing-view" viewClass="org.concord.datagraph.state.OTDataDrawingToolView" objectClass="org.concord.graph.util.state.OTDrawingTool" />
+            <OTViewEntry viewClass="org.concord.datagraph.state.OTMultiDataGraphView" objectClass="org.concord.datagraph.state.OTMultiDataGraph" />
+            <OTViewEntry local_id="cck-view" objectClass="org.concord.otrunkcck.OTCCKModel" viewClass="org.concord.otrunkcck.OTCCKModelView" />
+            <OTViewEntry local_id="data-table-view" objectClass="org.concord.data.state.OTDataTable" viewClass="org.concord.data.state.OTDataTableView" />
+            <OTViewEntry local_id="netlogo-view" viewClass="org.concord.otrunknl41.OTNLogoModelView" objectClass="org.concord.otrunknl41.OTNLogoModel" />
+            <OTViewEntry objectClass="org.concord.otrunkphet.balloons.OTPhetBalloonsModel" viewClass="org.concord.otrunkphet.balloons.OTPhetBalloonsModelView" />
+            <OTViewEntry local_id="sound-player-view" objectClass="org.concord.otrunk.ui.OTSoundPlayer" viewClass="org.concord.otrunk.ui.swing.OTSoundPlayerView"/>
+            <OTViewEntry local_id="overlay-wrapper-view" objectClass="org.concord.otrunk.overlay.OTOverlayWrapper" viewClass="org.concord.otrunk.overlay.OTOverlayWrapperView" />
+            <OTViewEntry id="b7541497-d286-4a23-900b-35c5e0edfde9" objectClass="org.concord.otrunk.intrasession.OTMultiUserPickN" viewClass="org.concord.otrunk.intrasession.ui.OTMultiUserConcatStudentView" />
+            <OTViewEntry id="40d7460a-e55f-47bc-9668-6d13a4835ce1" objectClass="org.concord.otrunk.intrasession.OTMultiUserPickN" viewClass="org.concord.otrunk.intrasession.ui.OTMultiUserConcatTeacherView" />
+            <OTViewEntry id="12b9b413-8aee-4fc7-b1a7-fe272f17509e" objectClass="org.concord.otrunk.intrasession.OTMultiUserPollingGraph" viewClass="org.concord.otrunk.intrasession.ui.OTMultiUserPollingGraphView" />
+            <OTViewEntry id="1b8f0a7a-0a5c-409d-ae40-c5b6e6f1e614" objectClass="org.concord.otrunk.intrasession.OTMultiUserPollingGraph" viewClass="org.concord.otrunk.intrasession.ui.OTMultiUserPollingGraphTeacherView" />
+            <OTViewEntry local_id="question-answer-view" objectClass="org.concord.otrunk.ui.question.OTQuestionAnswer" viewClass="org.concord.otrunk.ui.question.OTQuestionAnswerView" />
+            <OTDocumentViewConfig id="0d03b9c0-e48a-11dc-95ff-0800200c9a66" objectClass="org.concord.otrunk.view.document.OTCompoundDoc" viewClass="org.concord.otrunk.view.document.OTDocumentView">
+              <!--<definitionManager>
+                <object refid="b6350a20-e3b4-11dc-95ff-0800200c9a66" />
+              </definitionManager>-->
+              <cssBlocks>
+                <OTCssText id="23cc14f0-c44f-11dc-95ff-0800200c9a66" src="../css/otrunk-normal-font.css" />
+                <OTCssText id="31193bb0-c44f-11dc-95ff-0800200c9a66" src="../css/otrunk-56-color.css" />
+                <OTCssText id="3cefc800-c44f-11dc-95ff-0800200c9a66" src="../css/otrunk-normal-layout.css" />
+              </cssBlocks>
+            </OTDocumentViewConfig>
+            <OTPrototypeViewEntry id="textsize-choice-view" objectClass="org.concord.otrunk.OTSystem" viewClass="org.concord.otrunk.view.prototype.OTPrototypeView" copyPrototype="false">
+              <viewEntry>
+                <object refid="${choice-combo-view}" />
+              </viewEntry>
+              <prototype>
+                <OTChoice>
+                  <choices>
+                    <OTOverlay id="da41a2a0-c44e-11dc-95ff-0800200c9a66" name="Small text">
+                      <deltaObjectMap>
+                        <entry key="${css-font}">
+                          <OTCssText src="../css/otrunk-small-font.css" />
+                        </entry>
+                      </deltaObjectMap>
+                    </OTOverlay>
+                    <OTOverlay id="6cc8e2b0-c44e-11dc-95ff-0800200c9a66" name="Medium text" />
+                    <OTOverlay id="7ba31210-c44e-11dc-95ff-0800200c9a66" name="Large text">
+                      <deltaObjectMap>
+                        <entry key="${css-font}">
+                          <OTCssText src="../css/otrunk-large-font.css" />
+                        </entry>
+                      </deltaObjectMap>
+                    </OTOverlay>
+                  </choices>
+                </OTChoice>
+              </prototype>
+              <controller>
+                <OTPrototypeEventController>
+                  <mapping>
+                    <OTPrototypeMapEntry modelProperty="overlays[0]" prototypeProperty="currentChoice" />
+                  </mapping>
+                </OTPrototypeEventController>
+              </controller>
+            </OTPrototypeViewEntry>
+            <OTPrototypeViewEntry id="language-choice-view" objectClass="org.concord.otrunk.OTSystem" viewClass="org.concord.otrunk.view.prototype.OTPrototypeView" copyPrototype="false">
+              <viewEntry>
+                <object refid="${choice-combo-view}" />
+              </viewEntry>
+              <prototype>
+                <OTChoice>
+                  <choices>
+                    <OTOverlay id="english-overlay" name="English" />
+                    <OTOverlay id="spanish-overlay" name="EspaÃ±ol" />
+                  </choices>
+                </OTChoice>
+              </prototype>
+              <controller>
+                <OTPrototypeEventController>
+                  <mapping>
+                    <OTPrototypeMapEntry modelProperty="overlays[1]" prototypeProperty="currentChoice" />
+                  </mapping>
+                </OTPrototypeEventController>
+              </controller>
+            </OTPrototypeViewEntry>
+            <OTViewEntry objectClass="org.concord.graph.util.state.OTDrawingTool2" viewClass="org.concord.datagraph.state.OTDataDrawingToolView" />
+          </views>
+        </OTViewBundle>
+      </bundles>
+      <library>
+        <!--<OTDefinitionManager id="b6350a20-e3b4-11dc-95ff-0800200c9a66">
+          <definitions>
+                <OTDefinitionList src="../glossary/common-glossary.txt"/>
+          </definitions>
+          <frame>
+            <OTFrame local_id="definition_frame" width="300" height="190" borderlessPopup="true" />
+          </frame>
+        </OTDefinitionManager>-->
+        <OTCompoundDoc id="234e6400-c450-11dc-95ff-0800200c9a66" name="overlays-pulldown-menus"  showEditBar="false">
+                <bodyText />
+        </OTCompoundDoc>
+        <OTOverlay id="bfc60e90-db35-11dc-95ff-0800200c9a66">
+          <deltaObjectMap>
+            <entry key="${css-color}">
+              <OTCssText src="../css/otrunk-34-color.css" />
+            </entry>
+          </deltaObjectMap>
+        </OTOverlay>
+        <OTOverlay id="b5d8b4a0-db35-11dc-95ff-0800200c9a66">
+          <deltaObjectMap>
+            <entry key="${css-color}">
+              <OTCssText src="../css/otrunk-56-color.css" />
+            </entry>
+          </deltaObjectMap>
+        </OTOverlay>
+        <OTCompoundDoc id="175ae3d0-e610-11dc-95ff-0800200c9a66" name="top-menu" showEditBar="false">
+           <bodyText>
+             <div class="top-menu">
+               <table>
+                 <tr>
+                   <td>
+                     <object refid="${[no menu in author mode]}" viewid="textsize-choice-view" />
+                   </td>
+                 </tr>
+               </table>
+             </div>
+           </bodyText>
+         </OTCompoundDoc>
+      </library>
+    </OTSystem>
+  </objects>
+</otrunk>
+
+
+
+</otrunk>[dev]$ curl -i http://svn.concord.org/svn/projects/trunk/common/java/otrunk/otrunk-examples/LOOPS/chem-simulation-activity.otml
+HTTP/1.1 200 OK
+Date: Tue, 20 Apr 2010 14:55:56 GMT
+Server: Apache/2.2.3 (Red Hat)
+Last-Modified: Mon, 08 Jun 2009 17:23:58 GMT
+ETag: "19084//trunk/common/java/otrunk/otrunk-examples/LOOPS/chem-simulation-activity.otml"
+Accept-Ranges: bytes
+Content-Length: 29283
+Vary: Accept-Encoding
+Content-Type: text/plain; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<otrunk id="b4032390-3ac0-11de-8a39-0800200c9a66">
+  <imports>
+    <import class="org.concord.data.state.OTDataStore" />
+    <import class="org.concord.data.state.OTDataChannelDescription" />
+    <import class="org.concord.data.state.OTDataField" />
+    <import class="org.concord.data.state.OTDataTable" />
+    <import class="org.concord.datagraph.state.OTDataGraph" />
+    <import class="org.concord.datagraph.state.OTDataAxis" />
+    <import class="org.concord.datagraph.state.OTDataGraphable" />
+    <import class="org.concord.datagraph.state.OTDataCollector" />
+    <import class="org.concord.datagraph.state.OTMultiDataGraph" />
+    <import class="org.concord.datagraph.state.OTPluginView" />
+    <import class="org.concord.datagraph.state.OTDataBarGraphable" />
+    <import class="org.concord.framework.otrunk.view.OTFrame" />
+    <import class="org.concord.framework.otrunk.wrapper.OTBlob" />
+    <import class="org.concord.graph.util.state.OTDrawingTool" />
+    <import class="org.concord.graph.util.state.OTDrawingStamp" />
+    <import class="org.concord.graph.util.state.OTDrawingImageIcon" />
+    <import class="org.concord.graph.util.state.OTDrawingShape" />
+    <import class="org.concord.graph.util.state.OTDrawingTool2" />
+    <import class="org.concord.graph.util.state.OTPointTextLabel" />
+    <import class="org.concord.otrunk.OTInclude" />
+    <import class="org.concord.otrunk.OTSystem" />
+    <import class="org.concord.otrunk.browser.mozswing.OTMozSwing" />
+    <import class="org.concord.otrunk.overlay.OTOverlay" />
+    <import class="org.concord.otrunk.script.ui.OTScriptObject" />
+    <import class="org.concord.otrunk.script.ui.OTScriptVariable" />
+    <import class="org.concord.otrunk.script.ui.OTScriptVariableComponent" />
+    <import class="org.concord.otrunk.script.ui.OTScriptVariableView" />
+    <import class="org.concord.otrunk.script.js.OTJavascript" />
+    <import class="org.concord.otrunk.script.OTScriptEngineBundle" />
+    <import class="org.concord.otrunk.script.OTScriptEngineEntry" />
+    <import class="org.concord.otrunk.graph.OTDataCollectorViewConfig" />
+    <import class="org.concord.otrunk.ui.OTButton" />
+    <import class="org.concord.otrunk.ui.OTCardContainer" />
+    <import class="org.concord.otrunk.ui.OTChoice" />
+    <import class="org.concord.otrunk.ui.OTChoiceMultiple" />
+    <import class="org.concord.otrunk.ui.OTCurriculumUnit" />
+    <import class="org.concord.otrunk.ui.OTImage" />
+    <import class="org.concord.otrunk.ui.OTImageMap" />
+    <import class="org.concord.otrunk.ui.OTLayerContainer" />
+    <import class="org.concord.otrunk.ui.OTModeSwitcher" />
+    <import class="org.concord.otrunk.ui.OTText" />
+    <import class="org.concord.otrunk.ui.OTPlacement" />
+    <import class="org.concord.otrunk.ui.OTPlacementContainer" />
+    <import class="org.concord.otrunk.ui.swing.OTChoiceViewConfig" />
+    <import class="org.concord.otrunk.util.OTSharingBundle" />
+    <import class="org.concord.otrunk.util.OTLabbookBundle" />
+    <import class="org.concord.otrunk.util.OTLabbookEntry" />
+    <import class="org.concord.otrunk.labbook.OTLabbookButton" />
+    <import class="org.concord.otrunk.labbook.OTLabbook" />
+    <import class="org.concord.otrunk.labbook.OTLabbookEntryChooser" />
+    <import class="org.concord.otrunk.view.OTObjectEditViewConfig" />
+    <import class="org.concord.otrunk.view.OTViewChild" />
+    <import class="org.concord.otrunk.view.OTViewEntry" />
+    <import class="org.concord.otrunk.view.OTViewBundle" />
+    <import class="org.concord.otrunk.view.OTViewMode" />
+    <import class="org.concord.otrunk.view.document.OTCompoundDoc" />
+    <import class="org.concord.otrunk.view.document.OTCssText" />
+    <import class="org.concord.otrunk.view.prototype.OTPrototypeViewEntry" />
+    <import class="org.concord.otrunk.view.prototype.OTPrototypeEventController" />
+    <import class="org.concord.otrunk.view.prototype.OTPrototypeMapEntry" />
+    <import class="org.concord.otrunknl4.OTNLogoModel" />
+    <import class="org.concord.sensor.state.OTDeviceConfig" />
+    <import class="org.concord.sensor.state.OTExperimentRequest" />
+    <import class="org.concord.sensor.state.OTInterfaceManager" />
+    <import class="org.concord.sensor.state.OTSensorDataProxy" />
+    <import class="org.concord.sensor.state.OTSensorRequest" />
+    <import class="org.concord.sensor.state.OTZeroSensor" />
+    <import class="org.concord.datagraph.state.OTDataPointLabel" />
+    <import class="org.concord.otrunkmw.OTModelerPage" />
+    <import class="org.concord.otrunkmw.OTMwDataProducer" />
+    <import class="org.concord.otrunkmw.OTMwChannelData" />
+    <import class="org.concord.otrunk.ui.OTSoundPlayer" />
+    <import class="org.concord.otrunk.util.OTReference" />
+    <import class="org.concord.smartgraph.OTSmartGraphTool" />
+    <import class="org.concord.otrunk.script.ui.OTScriptButton" />
+    <import class="org.concord.otrunk.script.jruby.OTJRuby" />
+    <import class="org.concord.otrunk.script.ui.OTScriptVariableRealObject" />
+    <import class="org.concord.framework.otrunk.wrapper.OTInt" />
+    <import class="org.concord.framework.otrunk.wrapper.OTBoolean" />
+    <import class="org.concord.otrunk.overlay.OTOverlayWrapper" />
+    <import class="org.concord.otrunk.intrasession.OTMultiUserPickN" />
+    <import class="org.concord.otrunk.intrasession.OTMultiUserPollingGraph" />
+    <import class="org.concord.otrunk.ui.menu.OTNavBar" />
+    <import class="org.concord.otrunk.view.document.OTCompoundDoc" />
+    <import class="org.concord.otrunk.ui.question.OTQuestion" />
+    <import class="org.concord.otrunk.ui.menu.OTMenu" />
+    <import class="org.concord.otrunk.ui.OTSection" />
+    <import class="org.concord.otrunk.ui.menu.OTMenuRule" />
+    <import class="org.concord.framework.otrunk.wrapper.OTObjectSet" />
+    <import class="org.concord.otrunk.ui.OTObjectSet" />
+  </imports>
+  <objects>
+    <OTSystem local_id="system">
+      <includes>
+        <OTInclude href="global-imports/loops-view-bundle.otml" />
+      </includes>
+      <bundles>
+        <object refid="8d880970-c22a-11dc-95ff-0800200c9a66" />
+        <OTScriptEngineBundle>
+          <engines>
+            <OTScriptEngineEntry objectClass="org.concord.otrunk.script.jruby.OTJRuby" engineClass="org.concord.otrunk.script.jruby.OTJRubyEngine" />
+            <OTScriptEngineEntry objectClass="org.concord.otrunk.script.js.OTJavascript" engineClass="org.concord.otrunk.script.js.OTJavascriptEngine" />
+          </engines>
+        </OTScriptEngineBundle>
+        <OTSharingBundle />
+        <OTInterfaceManager>
+          <deviceConfigs>
+            <OTDeviceConfig configString="none" deviceId="10" />
+          </deviceConfigs>
+        </OTInterfaceManager>
+        <OTLabbookBundle />
+      </bundles>
+      <overlays>
+        <object refid="6cc8e2b0-c44e-11dc-95ff-0800200c9a66" />
+        <object refid="b5d8b4a0-db35-11dc-95ff-0800200c9a66" />
+        <OTOverlay>
+          <deltaObjectMap>
+            <entry key="${authoring_script.js}">
+              <OTJavascript src="scripts/student_script.js" />
+            </entry>
+          </deltaObjectMap>
+        </OTOverlay>
+      </overlays>
+      <root>
+        <OTCurriculumUnit version="2" name="LOOPS Activity">
+          <activity>
+            <OTSection local_id="section_1" name="Simulation">
+              <header>
+                <OTCompoundDoc id="2767fe20-6c7d-11dc-8314-0800200c9a66!/section_1/header" showEditBar="false">
+                  <bodyText>
+                    <div class="title">Simulating Hydrogen + Oxygen</div>
+                  </bodyText>
+                </OTCompoundDoc>
+              </header>
+              <content>
+                <OTCardContainer local_id="activity-card-container" contentsMayScroll="true" loadViewOnlyOnDemand="true" closeViewOnExit="true">
+                  <cards>
+                    <OTCompoundDoc id="6300c0a5-3989-11de-9bbf-a93eb4197402" name="%6300c0a5-3989-11de-9bbf-a93eb4197402" showEditBar="true">
+                      <bodyText>
+                        <div class="buffer">
+                          <div class="border">
+                            <div class="body">
+                              <div class="subtitle">Draw Hydrogen and Oxygen Atoms and Molecules</div>
+                              Follow the instructions below to draw atoms and molecules. You can 
+
+          take lots of snapshots. When you are done, select one snapshot and 
+
+          submit it. Your name will not be included with the snapshot. Your 
+
+          teacher will then send around some pictures for discussion. You can 
+
+          see these by clicking the "results" button."
+                              <br />
+                              <br />
+                              <object refid="ac51812d-3a54-11de-87fd-db993fdba086" />
+                              <br />
+                              <object refid="d53c6587-15d7-4be5-8b5a-a7e1bd151f5b" />
+                              <object refid="${album}"/>
+                              <br />
+                              <object refid="0b618d7b-3a84-11de-877b-0176bc3e3c26" />
+                              <br />
+                              <br />
+                            </div>
+                          </div>
+                        </div>
+                      </bodyText>
+                      <documentRefs>
+                        <OTModelerPage id="ac51812d-3a54-11de-87fd-db993fdba086" name="Molecular workbench" authoredDataURL="models/chem/sketcher1.cml">
+                          <variables />
+                        </OTModelerPage>
+                        <OTLabbookButton id="d53c6587-15d7-4be5-8b5a-a7e1bd151f5b" name="Snapshot Button" componentIndices="12and">
+                          <target>
+                            <object refid="ac51812d-3a54-11de-87fd-db993fdba086" />
+                          </target>
+                        </OTLabbookButton>
+                        <OTOverlayWrapper id="0b618d7b-3a84-11de-877b-0176bc3e3c26" name="SnapshotSave">
+                          <wrappedObject>
+                            <OTQuestion id="9603788f-3a83-11de-877b-0176bc3e3c26" name="Snapshot1">
+                              <prompt>
+                                <OTCompoundDoc>
+                                  <bodyText>Please select a snapshot of your drawings here.</bodyText>
+                                </OTCompoundDoc>
+                              </prompt>
+                              <input>
+                                <OTLabbookEntryChooser name="Labbook chooser" allowMultipleSelections="false" stripEntryBeforeEmbedding="true"/>
+                              </input>
+                            </OTQuestion>
+                          </wrappedObject>
+                          <resultsObject>
+                            <OTMultiUserPickN name="Snapshot1">
+                              <object>
+                                <object refid="9603788f-3a83-11de-877b-0176bc3e3c26" />
+                              </object>
+                            </OTMultiUserPickN>
+                          </resultsObject>
+                        </OTOverlayWrapper>
+                      </documentRefs>
+                    </OTCompoundDoc>
+                    <OTCompoundDoc id="15c510b9-398a-11de-9bbf-a93eb4197402" name="%15c510b9-398a-11de-9bbf-a93eb4197402" showEditBar="true">
+                      <bodyText>
+                        <div class="buffer">
+                          <div class="border">
+                            <div class="body">
+                              <div class="subtitle">Hydrogen Simulation Introduction</div>
+                              Why did the hydrogen balloon explode so violently? What happened to 
+          the molecules of hydrogen and oxygen inside the balloon?
+                              <br />
+                              <br />
+                              The 
+          chemical reaction equation for the burning of hydrogen:
+                              <br />
+                              <br />
+                              <img src="images/hydrogenequ2.jpg" />
+                              <br />
+                              <br />
+                              <br />
+                              You 
+          will use a simulation to see how hydrogen gas burns at a very, very 
+          slow pace. The screenshot below shows the controls. The actual 
+
+          simulation is on the next page.
+                              <br />
+                              <img src="images/modelInstruct.gif" />
+                              <br />
+                            </div>
+                          </div>
+                        </div>
+                      </bodyText>
+                    </OTCompoundDoc>
+                    <OTCompoundDoc id="cd42a18c-39a0-11de-ab21-cb7d5c45d404" name="%cd42a18c-39a0-11de-ab21-cb7d5c45d404" showEditBar="true">
+                      <bodyText>
+                        <div class="buffer">
+                          <div class="border">
+                            <div class="body">
+                              <div class="subtitle">Play with this 1st model and answer the questions below</div>
+                              <br />
+                              <object refid="87639b0a-3a50-11de-87fd-db993fdba086" />
+                              <br />
+                              Please answer the questions below and submit your answers for 
+          anonymous sharing. After you click on a Submit button, you will be 
+          able to see some of your classmates' answers by clicking on the 
+          Results button after your teacher releases them.
+                              <br />
+                              <br />
+                              <object refid="9f26b953-3a85-11de-8bc4-dd603fc996b1" />
+                              <br />
+                              <br />
+                              <object refid="d1757279-3a85-11de-8bc4-dd603fc996b1" />
+                              <br />
+                              <br />
+                              <object refid="eac7d6af-3a85-11de-8bc4-dd603fc996b1" />
+                              <br />
+                              <br />
+                              <object refid="091e41d5-3a86-11de-8bc4-dd603fc996b1" />
+                              <br />
+                              <br />
+                              <br />
+                              <br />
+                              <br />
+                              <br />
+                            </div>
+                          </div>
+                        </div>
+                      </bodyText>
+                      <documentRefs>
+                        <OTModelerPage id="87639b0a-3a50-11de-87fd-db993fdba086" name="Molecular workbench" authoredDataURL="models/chem/hydrogen1Otrunk.cml">
+                          <variables />
+                        </OTModelerPage>
+                        <OTOverlayWrapper id="9f26b953-3a85-11de-8bc4-dd603fc996b1" name="Model1Save1">
+                          <wrappedObject>
+                            <OTQuestion id="da790bfd-39a0-11de-ab21-cb7d5c45d404" name="Model1Q1">
+                              <prompt>
+                                <OTCompoundDoc>
+                                  <bodyText>Does this model produce water molecules? Please explain your answer.</bodyText>
+                                </OTCompoundDoc>
+                              </prompt>
+                              <input>
+                                <OTText text="Yes or No,  because..." />
+                              </input>
+                            </OTQuestion>
+                          </wrappedObject>
+                          <resultsObject>
+                            <OTMultiUserPickN name="Model1Q1 Pick N">
+                              <object>
+                                <object refid="da790bfd-39a0-11de-ab21-cb7d5c45d404" />
+                              </object>
+                            </OTMultiUserPickN>
+                          </resultsObject>
+                        </OTOverlayWrapper>
+                        <OTOverlayWrapper id="d1757279-3a85-11de-8bc4-dd603fc996b1" name="Model1Save2">
+                          <wrappedObject>
+                            <OTQuestion id="5056b128-39a1-11de-ab21-cb7d5c45d404" name="Model1Q2">
+                              <prompt>
+                                <OTCompoundDoc>
+                                  <bodyText>Describe how the chemical  bonds between hydrogen atoms (H) change.</bodyText>
+                                </OTCompoundDoc>
+                              </prompt>
+                              <input>
+                                <OTText text="The chemical bonds between hydrogen atoms ...  " />
+                              </input>
+                            </OTQuestion>
+                          </wrappedObject>
+                          <resultsObject>
+                            <OTMultiUserPickN name="Model1Q2 Pick N">
+                              <object>
+                                <object refid="5056b128-39a1-11de-ab21-cb7d5c45d404" />
+                              </object>
+                            </OTMultiUserPickN>
+                          </resultsObject>
+                        </OTOverlayWrapper>
+                        <OTOverlayWrapper id="eac7d6af-3a85-11de-8bc4-dd603fc996b1" name="Model1Save3">
+                          <wrappedObject>
+                            <OTQuestion id="a5eaf4d3-39a1-11de-ab21-cb7d5c45d404" name="Model1Q3">
+                              <prompt>
+                                <OTCompoundDoc>
+                                  <bodyText>Describe how the  chemical bonds between oxygen atoms(O) change?</bodyText>
+                                </OTCompoundDoc>
+                              </prompt>
+                              <input>
+                                <OTText text="The chemical bonds between oxygen atoms ... " />
+                              </input>
+                            </OTQuestion>
+                          </wrappedObject>
+                          <resultsObject>
+                            <OTMultiUserPickN name="Model1Q3 Pick N">
+                              <object>
+                                <object refid="a5eaf4d3-39a1-11de-ab21-cb7d5c45d404" />
+                              </object>
+                            </OTMultiUserPickN>
+                          </resultsObject>
+                        </OTOverlayWrapper>
+                        <OTOverlayWrapper id="091e41d5-3a86-11de-8bc4-dd603fc996b1" name="Model1Q4Save">
+                          <wrappedObject>
+                            <OTQuestion id="f2365bee-39a1-11de-ab21-cb7d5c45d404" name="Modle1Q4">
+                              <prompt>
+                                <OTCompoundDoc>
+                                  <bodyText>Does this reaction follow the law of conservation of matter?  Explain why or why not.</bodyText>
+                                </OTCompoundDoc>
+                              </prompt>
+                              <input>
+                                <OTText text="The reaction shown in the model ..., because ...." />
+                              </input>
+                            </OTQuestion>
+                          </wrappedObject>
+                          <resultsObject>
+                            <OTMultiUserPickN name="Model1Q4 Pick N">
+                              <object>
+                                <object refid="f2365bee-39a1-11de-ab21-cb7d5c45d404" />
+                              </object>
+                            </OTMultiUserPickN>
+                          </resultsObject>
+                        </OTOverlayWrapper>
+                      </documentRefs>
+                    </OTCompoundDoc>
+                    <OTCompoundDoc id="971b006d-398b-11de-9bbf-a93eb4197402" name="%971b006d-398b-11de-9bbf-a93eb4197402" showEditBar="true">
+                      <bodyText>
+                        <div class="buffer">
+                          <div class="border">
+                            <div class="body">
+                              <div class="subtitle">Play with the 2nd model and answer the following questions</div>
+                              <br />
+                              <object refid="5b56caef-3a51-11de-87fd-db993fdba086" />
+                              <br />
+                              <br />
+                              Please answer the questions below and submit your answers for 
+          anonymous sharing. After you click on a Submit button, you will be 
+          able to see some of your classmates' answers by clicking on the 
+          Results button after your teacher releases them.
+                              <br />
+                              <br />
+                              <object refid="62678219-3a87-11de-8bc4-dd603fc996b1" />
+                              <br />
+                              <br />
+                              <br />
+                              <object refid="850c11af-3a87-11de-8bc4-dd603fc996b1" />
+                              <br />
+                              <br />
+                              <br />
+                              <object refid="9ba4d425-3a87-11de-8bc4-dd603fc996b1" />
+                              <br />
+                              <br />
+                            </div>
+                          </div>
+                        </div>
+                      </bodyText>
+                      <documentRefs>
+                        <OTModelerPage id="5b56caef-3a51-11de-87fd-db993fdba086" name="Molecular workbench" authoredDataURL="models/chem/hydrogen2Otrunk.cml">
+                          <variables />
+                        </OTModelerPage>
+                        <OTOverlayWrapper id="62678219-3a87-11de-8bc4-dd603fc996b1" name="Model2Q1Save">
+                          <wrappedObject>
+                            <OTQuestion id="bfbadacd-39a3-11de-ab21-cb7d5c45d404" name="Model2Q1">
+                              <prompt>
+                                <OTCompoundDoc>
+                                  <bodyText>Does the simulation generate water molecules by clicking the "Run" button? Please explain your answer.</bodyText>
+                                </OTCompoundDoc>
+                              </prompt>
+                              <input>
+                                <OTText text="Yes or No, because ...." rows="2" />
+                              </input>
+                            </OTQuestion>
+                          </wrappedObject>
+                          <resultsObject>
+                            <OTMultiUserPickN name="Model1Q1 Pick N">
+                              <object>
+                                <object refid="bfbadacd-39a3-11de-ab21-cb7d5c45d404" />
+                              </object>
+                            </OTMultiUserPickN>
+                          </resultsObject>
+                        </OTOverlayWrapper>
+                        <OTOverlayWrapper id="850c11af-3a87-11de-8bc4-dd603fc996b1" name="Model2Q2Save">
+                          <wrappedObject>
+                            <OTQuestion id="074118b8-39a4-11de-ab21-cb7d5c45d404" name="Model2Q2">
+                              <prompt>
+                                <OTCompoundDoc>
+                                  <bodyText>Do the chemical bonds between hydrogen atoms (H) change? Do the chemical bonds between oxygen atoms (O) change?  Please explain your answer.</bodyText>
+                                </OTCompoundDoc>
+                              </prompt>
+                              <input>
+                                <OTText text="Bonds between hydrogen atoms: Yes or No. Bonds between oxygen atoms: Yes or No. Because ...." rows="2" />
+                              </input>
+                            </OTQuestion>
+                          </wrappedObject>
+                          <resultsObject>
+                            <OTMultiUserPickN name="Model2Q2 Pick N">
+                              <object>
+                                <object refid="074118b8-39a4-11de-ab21-cb7d5c45d404" />
+                              </object>
+                            </OTMultiUserPickN>
+                          </resultsObject>
+                        </OTOverlayWrapper>
+                        <OTOverlayWrapper id="9ba4d425-3a87-11de-8bc4-dd603fc996b1" name="Model2Q3Save">
+                          <wrappedObject>
+                            <OTQuestion id="b71526b3-39a4-11de-ab21-cb7d5c45d404" name="Model2Q3">
+                              <prompt>
+                                <OTCompoundDoc>
+                                  <bodyText>Compare the two models you just saw.  What conclusion about chemical reactions can you draw?  (Hint: Think about the function of the spark button and relate to the candle you saw in the hydrogen balloon video.)</bodyText>
+                                </OTCompoundDoc>
+                              </prompt>
+                              <input>
+                                <OTText text="My conclusion is ...." rows="2" />
+                              </input>
+                            </OTQuestion>
+                          </wrappedObject>
+                          <resultsObject>
+                            <OTMultiUserPickN name="Model2Q3 Pick N">
+                              <object>
+                                <object refid="b71526b3-39a4-11de-ab21-cb7d5c45d404" />
+                              </object>
+                            </OTMultiUserPickN>
+                          </resultsObject>
+                        </OTOverlayWrapper>
+                      </documentRefs>
+                    </OTCompoundDoc>
+                  </cards>
+                  <currentCard>
+                    <object refid="6300c0a5-3989-11de-9bbf-a93eb4197402" />
+                  </currentCard>
+                  <viewedCards>
+                    <object refid="6300c0a5-3989-11de-9bbf-a93eb4197402" />
+                  </viewedCards>
+                </OTCardContainer>
+              </content>
+              <footer>
+                <object refid="${nav-bar}" />
+              </footer>
+              <north>
+                <object refid="2767fe20-6c7d-11dc-8314-0800200c9a66!/section_1/header" />
+              </north>
+              <center>
+                <object refid="${activity-card-container}" />
+              </center>
+              <south>
+                <object refid="${nav-bar}" />
+              </south>
+            </OTSection>
+          </activity>
+          <script>
+            <object refid="${authoring-script}" />
+          </script>
+        </OTCurriculumUnit>
+      </root>
+      <library>
+        <object refid="b6350a20-e3b4-11dc-95ff-0800200c9a66" />
+        <OTMenu local_id="section-1-menu">
+          <cardContainer>
+            <object refid="${activity-card-container}" />
+          </cardContainer>
+          <menuRule>
+            <object refid="${page-rule}" />
+          </menuRule>
+        </OTMenu>
+        <OTLabbook local_id="album" />
+        <OTMenuRule local_id="page-rule" jumpToViewedCard="true" stepAhead="true" />
+        <OTJavascript local_id="change_page.js" src="scripts/change_page.js" />
+        <OTJavascript local_id="show_message.js" src="scripts/show_message.js" />
+        <OTJavascript local_id="loops_authoring_script.js" src="scripts/loops_authoring_script.js" />
+        <OTScriptObject local_id="authoring-script">
+          <variables>
+            <OTScriptVariable name="cardContainer">
+              <reference>
+                <object refid="${activity-card-container}" />
+              </reference>
+            </OTScriptVariable>
+            <OTScriptVariable name="system">
+              <reference>
+                <object refid="${system}" />
+              </reference>
+            </OTScriptVariable>
+            <OTScriptVariable name="menuPageRule">
+              <reference>
+                <object refid="${page-rule}" />
+              </reference>
+            </OTScriptVariable>
+          </variables>
+          <script>
+            <object refid="${loops_authoring_script.js}" />
+          </script>
+          <scriptState />
+        </OTScriptObject>
+        <OTNavBar local_id="nav-bar">
+          <menuView>
+            <object refid="29dc5ef0-c453-11dc-95ff-0800200c9a66" />
+          </menuView>
+          <cssColor>
+            <object refid="31193bb0-c44f-11dc-95ff-0800200c9a66" />
+          </cssColor>
+        </OTNavBar>
+      </library>
+    </OTSystem>
+  </objects>
+</otrunk>
+
+
+
+[dev]$ curl -i http://svn.concord.org/svn/projects/trunk/common/java/otrunk/otrunk-examples/LOOPS/chem-draw-activity.otml
+HTTP/1.1 200 OK
+Date: Tue, 20 Apr 2010 14:56:25 GMT
+Server: Apache/2.2.3 (Red Hat)
+Last-Modified: Mon, 08 Jun 2009 17:23:58 GMT
+ETag: "19084//trunk/common/java/otrunk/otrunk-examples/LOOPS/chem-draw-activity.otml"
+Accept-Ranges: bytes
+Content-Length: 15621
+Vary: Accept-Encoding
+Content-Type: text/plain; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?>
+<otrunk id="2767fe20-6c7d-11dc-8314-0800200c9a66">
+  <imports>
+    <import class="org.concord.data.state.OTDataStore" />
+    <import class="org.concord.data.state.OTDataChannelDescription" />
+    <import class="org.concord.data.state.OTDataField" />
+    <import class="org.concord.data.state.OTDataTable" />
+    <import class="org.concord.datagraph.state.OTDataGraph" />
+    <import class="org.concord.datagraph.state.OTDataAxis" />
+    <import class="org.concord.datagraph.state.OTDataGraphable" />
+    <import class="org.concord.datagraph.state.OTDataCollector" />
+    <import class="org.concord.datagraph.state.OTMultiDataGraph" />
+    <import class="org.concord.datagraph.state.OTPluginView" />
+    <import class="org.concord.datagraph.state.OTDataBarGraphable" />
+    <import class="org.concord.framework.otrunk.view.OTFrame" />
+    <import class="org.concord.framework.otrunk.wrapper.OTBlob" />
+    <import class="org.concord.graph.util.state.OTDrawingTool" />
+    <import class="org.concord.graph.util.state.OTDrawingStamp" />
+    <import class="org.concord.graph.util.state.OTDrawingImageIcon" />
+    <import class="org.concord.graph.util.state.OTDrawingShape" />
+    <import class="org.concord.graph.util.state.OTDrawingTool2" />
+    <import class="org.concord.graph.util.state.OTPointTextLabel" />
+    <import class="org.concord.otrunk.OTInclude" />
+    <import class="org.concord.otrunk.OTSystem" />
+    <import class="org.concord.otrunk.browser.mozswing.OTMozSwing" />
+    <import class="org.concord.otrunk.overlay.OTOverlay" />
+    <import class="org.concord.otrunk.script.ui.OTScriptObject" />
+    <import class="org.concord.otrunk.script.ui.OTScriptVariable" />
+    <import class="org.concord.otrunk.script.ui.OTScriptVariableComponent" />
+    <import class="org.concord.otrunk.script.ui.OTScriptVariableView" />
+    <import class="org.concord.otrunk.script.js.OTJavascript" />
+    <import class="org.concord.otrunk.script.OTScriptEngineBundle" />
+    <import class="org.concord.otrunk.script.OTScriptEngineEntry" />
+    <import class="org.concord.otrunk.graph.OTDataCollectorViewConfig" />
+    <import class="org.concord.otrunk.ui.OTButton" />
+    <import class="org.concord.otrunk.ui.OTCardContainer" />
+    <import class="org.concord.otrunk.ui.OTChoice" />
+    <import class="org.concord.otrunk.ui.OTChoiceMultiple" />
+    <import class="org.concord.otrunk.ui.OTCurriculumUnit" />
+    <import class="org.concord.otrunk.ui.OTImage" />
+    <import class="org.concord.otrunk.ui.OTImageMap" />
+    <import class="org.concord.otrunk.ui.OTLayerContainer" />
+    <import class="org.concord.otrunk.ui.OTModeSwitcher" />
+    <import class="org.concord.otrunk.ui.OTText" />
+    <import class="org.concord.otrunk.ui.OTPlacement" />
+    <import class="org.concord.otrunk.ui.OTPlacementContainer" />
+    <import class="org.concord.otrunk.ui.swing.OTChoiceViewConfig" />
+    <import class="org.concord.otrunk.util.OTSharingBundle" />
+    <import class="org.concord.otrunk.util.OTLabbookBundle" />
+    <import class="org.concord.otrunk.util.OTLabbookEntry" />
+    <import class="org.concord.otrunk.labbook.OTLabbookButton" />
+    <import class="org.concord.otrunk.labbook.OTLabbook" />
+    <import class="org.concord.otrunk.labbook.OTLabbookEntryChooser" />
+    <import class="org.concord.otrunk.view.OTObjectEditViewConfig" />
+    <import class="org.concord.otrunk.view.OTViewChild" />
+    <import class="org.concord.otrunk.view.OTViewEntry" />
+    <import class="org.concord.otrunk.view.OTViewBundle" />
+    <import class="org.concord.otrunk.view.OTViewMode" />
+    <import class="org.concord.otrunk.view.document.OTCompoundDoc" />
+    <import class="org.concord.otrunk.view.document.OTCssText" />
+    <import class="org.concord.otrunk.view.prototype.OTPrototypeViewEntry" />
+    <import class="org.concord.otrunk.view.prototype.OTPrototypeEventController" />
+    <import class="org.concord.otrunk.view.prototype.OTPrototypeMapEntry" />
+    <import class="org.concord.otrunknl4.OTNLogoModel" />
+    <import class="org.concord.sensor.state.OTDeviceConfig" />
+    <import class="org.concord.sensor.state.OTExperimentRequest" />
+    <import class="org.concord.sensor.state.OTInterfaceManager" />
+    <import class="org.concord.sensor.state.OTSensorDataProxy" />
+    <import class="org.concord.sensor.state.OTSensorRequest" />
+    <import class="org.concord.sensor.state.OTZeroSensor" />
+    <import class="org.concord.datagraph.state.OTDataPointLabel" />
+    <import class="org.concord.otrunkmw.OTModelerPage" />
+    <import class="org.concord.otrunkmw.OTMwDataProducer" />
+    <import class="org.concord.otrunkmw.OTMwChannelData" />
+    <import class="org.concord.otrunk.ui.OTSoundPlayer" />
+    <import class="org.concord.otrunk.util.OTReference" />
+    <import class="org.concord.smartgraph.OTSmartGraphTool" />
+    <import class="org.concord.otrunk.script.ui.OTScriptButton" />
+    <import class="org.concord.otrunk.script.jruby.OTJRuby" />
+    <import class="org.concord.otrunk.script.ui.OTScriptVariableRealObject" />
+    <import class="org.concord.framework.otrunk.wrapper.OTInt" />
+    <import class="org.concord.framework.otrunk.wrapper.OTBoolean" />
+    <import class="org.concord.otrunk.overlay.OTOverlayWrapper" />
+    <import class="org.concord.otrunk.intrasession.OTMultiUserPickN" />
+    <import class="org.concord.otrunk.intrasession.OTMultiUserPollingGraph" />
+    <import class="org.concord.otrunk.ui.menu.OTNavBar" />
+    <import class="org.concord.otrunk.view.document.OTCompoundDoc" />
+    <import class="org.concord.otrunk.ui.question.OTQuestion" />
+    <import class="org.concord.otrunk.ui.menu.OTMenu" />
+    <import class="org.concord.otrunk.ui.OTSection" />
+    <import class="org.concord.otrunk.ui.menu.OTMenuRule" />
+    <import class="org.concord.framework.otrunk.wrapper.OTObjectSet" />
+    <import class="org.concord.otrunk.ui.OTObjectSet" />
+  </imports>
+  <objects>
+    <OTSystem local_id="system">
+      <includes>
+        <OTInclude href="global-imports/loops-view-bundle.otml" />
+      </includes>
+      <bundles>
+        <object refid="8d880970-c22a-11dc-95ff-0800200c9a66" />
+        <OTScriptEngineBundle>
+          <engines>
+            <OTScriptEngineEntry objectClass="org.concord.otrunk.script.jruby.OTJRuby" engineClass="org.concord.otrunk.script.jruby.OTJRubyEngine" />
+            <OTScriptEngineEntry objectClass="org.concord.otrunk.script.js.OTJavascript" engineClass="org.concord.otrunk.script.js.OTJavascriptEngine" />
+          </engines>
+        </OTScriptEngineBundle>
+        <OTSharingBundle />
+        <OTInterfaceManager>
+          <deviceConfigs>
+            <OTDeviceConfig configString="none" deviceId="10" />
+          </deviceConfigs>
+        </OTInterfaceManager>
+        <OTLabbookBundle />
+      </bundles>
+      <overlays>
+        <object refid="6cc8e2b0-c44e-11dc-95ff-0800200c9a66" />
+        <object refid="b5d8b4a0-db35-11dc-95ff-0800200c9a66" />
+        <OTOverlay>
+          <deltaObjectMap>
+            <entry key="${authoring_script.js}">
+              <OTJavascript src="scripts/student_script.js" />
+            </entry>
+          </deltaObjectMap>
+        </OTOverlay>
+      </overlays>
+      <root>
+        <OTCurriculumUnit version="2" name="LOOPS Activity">
+          <activity>
+            <OTSection local_id="section_1" name="Drawing">
+              <header>
+                <OTCompoundDoc id="2767fe20-6c7d-11dc-8314-0800200c9a66!/section_1/header" showEditBar="false">
+                  <bodyText>
+                    <div class="title">Drawing the Hydrogen + Oxygen Reaction</div>
+                  </bodyText>
+                </OTCompoundDoc>
+              </header>
+              <content>
+                <OTCardContainer local_id="activity-card-container" contentsMayScroll="true" loadViewOnlyOnDemand="true" closeViewOnExit="true">
+                  <cards>
+                    <OTCompoundDoc id="42f9b2f0-3a62-11de-8ae4-f5f8ac321f77" name="%42f9b2f0-3a62-11de-8ae4-f5f8ac321f77" showEditBar="true">
+                      <bodyText>
+                        <div class="buffer">
+                          <div class="border">
+                            <div class="body">
+                              <div class="subtitle">Draw the reaction and explain your drawing</div>
+                              Below you'll be drawing four pictures that represent the reaction of 
+          hydrogen with oxygen.
+                              <br />
+                              <br />
+                              When you've finished your pictures, 
+          please take a snapshot and submit it for anonymous sharing: Choose 
+          your snapshot as the answer to the question below, then click the 
+          Submit button. Be sure to take a snapshot before moving on to a 
+          different step because the snapshots are saved, but the drawings 
+          themselves are not.
+                              <br />
+                              <br />
+                              After you click on the Submit button below, you will be able to see some of 
+          your classmates' answers by clicking on the Results button after 
+          your teacher releases them. The results will appear in a pop-up 
+          window.
+                              <br />
+                              <br />
+                              <object refid="ee4e9d04-3a69-11de-a2b3-1f8d03740519" />
+                              <br />
+                              <object refid="1fc3b9ce-3b1b-11de-8d99-99dbfb0118e5" />
+                              <object refid="${album}"/>
+                              <br />
+                              <br />
+                              <br />
+                              <object refid="512010eb-3a89-11de-825d-c74df368a75d" />
+                              <br />
+                            </div>
+                          </div>
+                        </div>
+                      </bodyText>
+                      <documentRefs>
+                        <OTModelerPage id="ee4e9d04-3a69-11de-a2b3-1f8d03740519" name="Molecular workbench" authoredDataURL="http://continuum.concord.org/otrunk/examples/LOOPS/models/chem/sketcher2.cml">
+                          <variables />
+                        </OTModelerPage>
+                        <OTLabbookButton id="1fc3b9ce-3b1b-11de-8d99-99dbfb0118e5" name="Labbook button">
+                          <target>
+                            <object refid="ee4e9d04-3a69-11de-a2b3-1f8d03740519" />
+                          </target>
+                        </OTLabbookButton>
+                        <OTOverlayWrapper id="512010eb-3a89-11de-825d-c74df368a75d" name="SnapShotSave">
+                          <wrappedObject>
+                            <OTQuestion id="9274bff8-3a6b-11de-a2b3-1f8d03740519" name="SnapShotQuestion">
+                              <prompt>
+                                <OTCompoundDoc>
+                                  <bodyText>Please insert a snapshot of your drawings here.</bodyText>
+                                </OTCompoundDoc>
+                              </prompt>
+                              <input>
+                                <OTLabbookEntryChooser name="Labbook chooser" allowMultipleSelections="false" stripEntryBeforeEmbedding="true"/>
+                              </input>
+                            </OTQuestion>
+                          </wrappedObject>
+                          <resultsObject>
+                            <OTMultiUserPickN name="SnapShot Pick N">
+                              <object>
+                                <object refid="9274bff8-3a6b-11de-a2b3-1f8d03740519" />
+                              </object>
+                            </OTMultiUserPickN>
+                          </resultsObject>
+                        </OTOverlayWrapper>
+                      </documentRefs>
+                    </OTCompoundDoc>
+                    <OTCompoundDoc id="ac6d3f14-35ef-11de-9123-8581a861c3a6" name="%ac6d3f14-35ef-11de-9123-8581a861c3a6" showEditBar="true">
+                      <bodyText>
+                        <div class="buffer">
+                          <div class="border">
+                            <div class="body">
+                              <div class="subtitle">The End</div>
+                            </div>
+                          </div>
+                        </div>
+                      </bodyText>
+                    </OTCompoundDoc>
+                  </cards>
+                  <currentCard>
+                    <object refid="42f9b2f0-3a62-11de-8ae4-f5f8ac321f77" />
+                  </currentCard>
+                  <viewedCards>
+                    <object refid="42f9b2f0-3a62-11de-8ae4-f5f8ac321f77" />
+                  </viewedCards>
+                </OTCardContainer>
+              </content>
+              <footer>
+                <object refid="${nav-bar}" />
+              </footer>
+              <north>
+                <object refid="2767fe20-6c7d-11dc-8314-0800200c9a66!/section_1/header" />
+              </north>
+              <center>
+                <object refid="${activity-card-container}" />
+              </center>
+              <south>
+                <object refid="${nav-bar}" />
+              </south>
+            </OTSection>
+          </activity>
+          <script>
+            <object refid="${authoring-script}" />
+          </script>
+        </OTCurriculumUnit>
+      </root>
+      <library>
+        <OTLabbook local_id="album" />
+        <object refid="b6350a20-e3b4-11dc-95ff-0800200c9a66" />
+        <OTMenu local_id="section-1-menu">
+          <cardContainer>
+            <object refid="${activity-card-container}" />
+          </cardContainer>
+          <menuRule>
+            <object refid="${page-rule}" />
+          </menuRule>
+        </OTMenu>
+        <OTMenuRule local_id="page-rule" jumpToViewedCard="true" stepAhead="true" />
+        <OTJavascript local_id="change_page.js" src="scripts/change_page.js" />
+        <OTJavascript local_id="show_message.js" src="scripts/show_message.js" />
+        <OTJavascript local_id="loops_authoring_script.js" src="scripts/loops_authoring_script.js" />
+        <OTScriptObject local_id="authoring-script">
+          <variables>
+            <OTScriptVariable name="cardContainer">
+              <reference>
+                <object refid="${activity-card-container}" />
+              </reference>
+            </OTScriptVariable>
+            <OTScriptVariable name="system">
+              <reference>
+                <object refid="${system}" />
+              </reference>
+            </OTScriptVariable>
+            <OTScriptVariable name="menuPageRule">
+              <reference>
+                <object refid="${page-rule}" />
+              </reference>
+            </OTScriptVariable>
+          </variables>
+          <script>
+            <object refid="${loops_authoring_script.js}" />
+          </script>
+          <scriptState />
+        </OTScriptObject>
+        <OTNavBar local_id="nav-bar">
+          <menuView>
+            <object refid="29dc5ef0-c453-11dc-95ff-0800200c9a66" />
+          </menuView>
+          <cssColor>
+            <object refid="31193bb0-c44f-11dc-95ff-0800200c9a66" />
+          </cssColor>
+        </OTNavBar>
+      </library>
+    </OTSystem>
+  </objects>
+</otrunk>
+
+[dev]$

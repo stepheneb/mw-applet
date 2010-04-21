@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Molecular Workbench Applet</title>
+  <link rel="stylesheet" href="stylesheet/test.css" type="text/css" />
+</head>
+<body>
+  <div id="main" class="page-content">
+    <h3 class="page-title namespace">Molecular Workbench Applet</h3>
+    <div class="two-column-left clearfix">
+      <div id="applet-container">
+        <applet d="myapplet"
+          codebase="http://mw2.concord.org/public/test" 
+          archive="../lib/mwapplet.jar" 
+          code="org.concord.modeler.MwApplet"
+          
+          width="100%" 
+          height="480">
+          <param name="script" value="page:0:import test.cml"/> 
+        </applet>
+      </div>
+    </div>
+    <div class="two-column-right clearfix">
+      <p>This page embeds Molecular Workbench as an applet. There is no extended logging or reporting capability.</p>
+    </div>
+    <div class="clearfix"/></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<otrunk id="33754150-b594-11d9-9669-0800200c9a66">
+  <imports>
+    <import class="org.concord.otrunk.OTSystem"/>
+    <import class="org.concord.otrunk.view.OTViewEntry"/>
+    <import class="org.concord.otrunk.view.OTViewService"/>
+    <import class="org.concord.otrunk.view.document.OTCompoundDoc"/>
+    <import class="org.concord.otrunk.view.document.OTTextObject"/>
+    <import class="org.concord.otrunkmw.OTModelerModel"/>
+    <import class="org.concord.otrunkmw.OTModelerPage"/>
+  </imports>
+  <objects>
+    <OTSystem>
+      <services>
+        <OTViewService showLeftPanel="false">
+          <viewEntries>
+            <OTViewEntry objectClass="org.concord.otrunk.view.document.OTTextObject" viewClass="org.concord.otrunk.view.document.OTTextObjectView"/>
+            <OTViewEntry objectClass="org.concord.otrunkmw.OTModelerModel" viewClass="org.concord.otrunkmw.OTModelerModelView"/>
+            <OTViewEntry objectClass="org.concord.otrunkmw.OTModelerPage" viewClass="org.concord.otrunkmw.OTModelerPageView"/>
+            <OTViewEntry objectClass="org.concord.otrunk.view.document.OTDocument" viewClass="org.concord.otrunk.view.document.OTDocumentView"/>
+          </viewEntries>
+        </OTViewService>
+      </services>
+      <root>
+        <OTCompoundDoc>
+          <bodyText>
+            <div style="background-color: rgb(255, 248, 233); border: border-width: 5px; border-color: red; border-style: solid;">
+              <div style="margin: 0px 0px 0px 0px; padding: 0px 20px 10px 20px; font-family: Optima; border: border-width: 5px; border-color: blue; border-style: solid;">
+                <div style="text-align: center; font-style: italic; font-family: Optima; color: rgb(0, 102, 0); margin-top: 0px; margin-bottom: 4px;">
+                  <font size="-1">
+                    <span style="font-family: Futura;">
+                      <p>An example OTrunk adaptation of the Molecular Workbench Heatflow activity originally written by Bob Tinker.</p>
+                    </span>
+                  </font>
+                </div>
+                <h1 style="letter-spacing: 3px; font-family: Optima ExtraBlack;">Heatflow, Step 1</h1>
+                <div style="margin: 10px 0px 5px 0px; padding: 8px 25px 15px 15px; background-color: rgb(255, 252, 248); font-family: Optima ExtraBlack; border-width: 1px; border-color: silver; border-style: solid; list-style-type: square;">
+                  <h2>What does that <span style="color: red;">red</span> text coloring mean?</h2>
+                  <p><em>By Bob Tinker, Concord Consortium</em></p>
+                  <div style="margin: 0px 0px 0px 0px; padding: 0px 0px 4px 10px; font-family: Optima;">
+                    <p>Here are some games that will help you learn about kinetic energy.</p>
+                    <p>The object of the first game is to turn the two open circles red. While you use the game, figure out what the red color represents.</p>
+                    <p>You need to know:</p>
+                    <ol>
+                      <li>The balls represent atoms.</li>
+                      <li>You can apply force to the atom with the lines through it.</li>
+                      <li>Use the arrow keys to apply the forces.</li>
+                    </ol>
+                  </div>
+                </div>
+                <div style="margin: 10px 0px 5px 0px; padding: 8px 25px 15px 15px; background-color: rgb(255, 252, 248); font-family: Optima ExtraBlack; border-width: 1px; border-color: silver; border-style: solid; list-style-type: square;">
+                  <h2>Investigate the model.</h2>
+                  <div style="margin: 0px 0px 0px 0px; padding: 0px 0px 4px 10px; font-family: Optima; border-width: 1px; border-color: silver; border-style: solid;">
+                    <p><span style="font-weight: bold;">Start</span> the simulation, <span style="font-weight: bold;">click</span> inside the model, and try <span style="font-weight: bold;">pressing</span> the arrow keys on your keyboard.</p>
+                    <!-- The object is embedded in a table so the width is set to the objects preferred width 
+                         If it isn't in a table it will expand to the width available in the container it is in -->
+                    <table>
+                    	<tr><td><object editable="true" refid="${mw_step1}"/></td></tr>
+                    </table>
+                    <div style='font-style: italic; font-family: Optima; color: rgb(0, 102, 0); margin: 0px 10px 5px 10px;'><font size='-1'><span style=''>Powered by the <a style='text-decoration: none; font-size: 0.9em; font-weight: 500; color: rgb(0, 160, 0);' href='http://mw.concord.org/modeler/index.html'>Molecular Workbench</a> software, Concord Consortium.</span></font></div>
+                  </div>
+                  <!-- <div style="margin: 10px 0px 10px 0px; padding: 8px 20px 15px 20px;  background-color: rgb(128, 252, 248); border-width: 5px; border-color: silver; border-style: solid;">
+                    <p>All by itself after a Paragraph element.</p>
+                    <object editable="true" refid="${mw_step1}"/>
+                  </div> -->
+                </div>
+                <div style="margin: 10px 0px 5px 0px; padding: 8px 25px 15px 15px; background-color: rgb(255, 252, 248); font-family: Optima ExtraBlack; border-width: 1px; border-color: silver; border-style: solid; list-style-type: square;">
+                  <h2>Now try these challenges:</h2>
+                  <div style="margin: 0px 0px 0px 0px; padding: 0px 0px 4px 10px; font-family: Optima;">
+                    <ol>
+                      <li>Take a snapshot when the steered atom is white but the kinetic energy bar is all red.</li>
+                      <li>Repeat with ten or more atoms. Use the tools at the top of the model to add more atoms. Click once on a circle in the toolbar and then click inside the model container.</li>
+                      <li>Starting with all the atoms red, get them all white just by controlling the steered atom.</li>
+                    </ol>
+                    <div style="margin: 5px 10px 5px 10px; padding: 0px 60px 10px 15px;  background-color: rgb(255, 252, 248);">
+                      <div style="">
+                        <p>What does that red coloring mean?</p>
+                        <p>
+                          <object editable="true" refid="${to_id_1}"/>
+                        </p>
+                      </div>
+                    </div>
+                    <div style="margin: 5px 10px 5px 10px; padding: 0px 60px 10px 15px;  background-color: rgb(255, 252, 248);">
+                      <div style="">
+                        <p>How much kinetic energy is represented by a white atom?</p>
+                        <p>
+                          <object editable="true" refid="${to_id_2}"/>
+                        </p>
+                      </div>
+                    </div>
+                    <div style="margin: 5px 10px 5px 10px; padding: 0px 60px 10px 15px;  background-color: rgb(255, 252, 248);">
+                      <div style="">
+                        <p>What strategy did you use for challenge 3?</p>
+                        <p>
+                          <object editable="true" refid="${to_id_3}"/>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div style="margin: 10px 0px 0px 0px; padding: 0px 0px 0px 0px; border: border-width: 5px; border-color: blue; border-style: solid;">
+                  <hr/>
+                  <div style="text-align: center; font-style: normal; font-family: Optima; color: rgb(0, 102, 0); margin: 0px 20px 0px 20px; padding: 0px 0px 0px 0px;">
+                    <font size="-1">
+                      <p>This adaptation of Step 1 of the <a href="http://mw.concord.org/modeler/index.html">Molecular Workbench</a> Heatflow activity by Bob Tinker uses Concord Consortium's <a href = "http://confluence.concord.org/display/TMS/OTrunk">OTrunk</a> framework. The actual molecular model is still an MW component but all the other activity content has been translated into OTrunk. To view the original activity start <a href="http://mw.concord.org/modeler/index.html">Molecular Workbench</a> and load the following activity, Heatflow, Step 1: http://mw.concord.org/modeler1.3/part1/heatflow/Step1.cml.</p>
+                    </font>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </bodyText>
+          <documentRefs>
+            <OTModelerModel local_id="mw_model" showDefaultToolbar="true" authoredDataURL="heatflow-cml-just-models/Step1$0.mml"/>
+            <OTModelerPage local_id="mw_step1" authoredDataURL="heatflow-cml-just-models/Step1.cml"/>
+            <OTTextObject local_id="to_id_1">
+              <bodyText>Place answer here!</bodyText>
+            </OTTextObject>
+            <OTTextObject local_id="to_id_2">
+              <bodyText>Place answer here!</bodyText>
+            </OTTextObject>
+            <OTTextObject local_id="to_id_3">
+              <bodyText>Place answer here!</bodyText>
+            </OTTextObject>
+          </documentRefs>
+        </OTCompoundDoc>
+      </root>
+    </OTSystem>
+  </objects>
+</otrunk>
