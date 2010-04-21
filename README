@@ -1,1 +1,21 @@
 Demonstration of embeddeding Molecular Workbench as an applet and as as an OTrunk Applet using aspects to instrument both MW and OTModelerPage.
+
+The jars used are located in these directories:
+
+  5.8M    lib/mw
+  7.9M    lib/mw-aspects
+  1.2M    lib/otrunk
+
+lib/mw contains the MW applet jar dsitributed here:  http://mw2.concord.org/public/lib/mwapplet.jar
+
+This jar is only used with mw_applet1.html.
+
+lib/mw-aspects contains a variation on this jar: mw-aspects.jar built by maven with some (??) changes to work with the aspect-oriented logging system.
+
+I'm not sure why mw-aspects.jar is 2.2 MB bigger than mwapplet.jar.
+
+  $ ls -lh lib/mw-aspects/mw-aspects.jar lib/mw/mwapplet.jar 
+  -rw-r--r--  1 stephen  staff   7.9M Apr 20 22:18 lib/mw-aspects/mw-aspects.jar
+  -rw-r--r--  1 stephen  staff   5.7M Apr 20 22:18 lib/mw/mwapplet.jar
+
+Without that difference adding the support for wrapping MW in OTrunk appears to just add 1.2 MB.
